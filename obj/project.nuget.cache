@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZXxQNv6iq7o=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Owner\\source\\repos\\OakMusic\\OakMusic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.web.webview2\\1.0.4191.47\\microsoft.web.webview2.1.0.4191.47.nupkg.sha512"
+  ],
+  "logs": []
+}
