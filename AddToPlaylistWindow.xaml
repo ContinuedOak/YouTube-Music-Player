@@ -1,0 +1,56 @@
+﻿<Window x:Class="OakMusic.AddToPlaylistWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="340"
+        Height="400"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+
+    <Border Background="#181818"
+            BorderBrush="#303030"
+            BorderThickness="1"
+            CornerRadius="14"
+            Padding="18">
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       Text="Add to Playlist"
+                       Foreground="#F0F0F0"
+                       FontSize="18"
+                       FontWeight="SemiBold"
+                       Margin="0,0,0,14"/>
+
+            <ScrollViewer Grid.Row="1"
+                          VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Disabled">
+
+                <StackPanel x:Name="PlaylistPanel"/>
+
+            </ScrollViewer>
+
+            <Button Grid.Row="2"
+                    Content="Cancel"
+                    Width="80"
+                    Height="34"
+                    HorizontalAlignment="Right"
+                    Margin="0,14,0,0"
+                    Background="Transparent"
+                    Foreground="#AAAAAA"
+                    BorderThickness="0"
+                    Click="CancelButton_Click"/>
+
+        </Grid>
+
+    </Border>
+
+</Window>

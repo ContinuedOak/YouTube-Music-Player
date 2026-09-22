@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="OakMusic.Views.SearchView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Margin="24,8,24,0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="SEARCH RESULTS"
+                   Foreground="#707070"
+                   FontSize="11"
+                   FontWeight="SemiBold"
+                   Margin="2,0,0,10"/>
+
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+
+            <StackPanel x:Name="SearchResultsPanel"/>
+
+        </ScrollViewer>
+
+    </Grid>
+
+</UserControl>

@@ -1,0 +1,180 @@
+﻿<Window x:Class="OakMusic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wvc="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:views="clr-namespace:OakMusic.Views"
+        mc:Ignorable="d"
+        Title="OakMusic"
+        Width="380"
+        Height="560"
+        MinWidth="340"
+        MinHeight="500"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+
+    <Border Background="#151515"
+            CornerRadius="16"
+            BorderBrush="#282828"
+            BorderThickness="1">
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="48"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="1"/>
+            </Grid.RowDefinitions>
+
+            <!-- TITLE BAR -->
+
+            <Grid Grid.Row="0"
+                  Background="#181818"
+                  MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="38"/>
+                    <ColumnDefinition Width="38"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0"
+                        Content="☰"
+                        Width="32"
+                        Height="32"
+                        Margin="8,0,0,0"
+                        Background="Transparent"
+                        Foreground="#B8B8B8"
+                        BorderThickness="0"
+                        FontSize="16"
+                        Click="PlaylistButton_Click"/>
+
+                <Button Grid.Column="1"
+                        Content="YouTube Music"
+                        Width="120"
+                        Height="32"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Margin="4,0,0,0"
+                        Background="Transparent"
+                        Foreground="#EAEAEA"
+                        BorderThickness="0"
+                        FontSize="15"
+                        FontWeight="SemiBold"
+                        Click="PlayerButton_Click"/>
+
+                <Button Grid.Column="2"
+                        Content="—"
+                        Width="32"
+                        Height="32"
+                        Background="Transparent"
+                        Foreground="#888888"
+                        BorderThickness="0"
+                        FontSize="15"
+                        Click="MinimizeButton_Click"/>
+
+                <Button Grid.Column="3"
+                        Content="×"
+                        Width="32"
+                        Height="32"
+                        Background="Transparent"
+                        Foreground="#888888"
+                        BorderThickness="0"
+                        FontSize="18"
+                        Click="CloseButton_Click"/>
+
+            </Grid>
+
+
+            <!-- VIEW HOST -->
+
+            <Grid Grid.Row="1"
+                  Margin="0,8,0,0">
+
+                <views:PlayerView x:Name="PlayerView"
+                                  Visibility="Visible"/>
+
+                <views:SearchView x:Name="SearchView"
+                                  Visibility="Collapsed"/>
+
+                <views:PlaylistView x:Name="PlaylistView"
+                                    Visibility="Collapsed"/>
+
+            </Grid>
+
+
+            <!-- SEARCH BAR -->
+
+            <Grid Grid.Row="2"
+                  Margin="20,8,20,10">
+
+                <Border Background="#202020"
+                        CornerRadius="12"
+                        BorderBrush="#2C2C2C"
+                        BorderThickness="1">
+
+                    <Grid>
+
+                        <TextBox x:Name="SearchTextBox"
+                                 Margin="14,0,42,0"
+                                 Background="Transparent"
+                                 BorderThickness="0"
+                                 Foreground="#E8E8E8"
+                                 CaretBrush="#E8E8E8"
+                                 FontSize="14"
+                                 VerticalContentAlignment="Center"
+                                 TextChanged="SearchTextBox_TextChanged"
+                                 KeyDown="SearchTextBox_KeyDown"/>
+
+                        <TextBlock Text="Search"
+                                   Margin="14,0,0,0"
+                                   Foreground="#666666"
+                                   FontSize="14"
+                                   VerticalAlignment="Center"
+                                   IsHitTestVisible="False"
+                                   Visibility="Visible"
+                                   x:Name="SearchPlaceholder"/>
+
+                        <Button Content="⌕"
+                                Width="38"
+                                Height="38"
+                                HorizontalAlignment="Right"
+                                Background="Transparent"
+                                Foreground="#8A8A8A"
+                                BorderThickness="0"
+                                FontSize="19"
+                                Click="SearchButton_Click"/>
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- BOTTOM BORDER -->
+
+            <Border Grid.Row="3"
+                    Background="#292929"/>
+
+
+            <!-- HIDDEN YOUTUBE PLAYER -->
+
+            <wvc:WebView2 x:Name="YouTubePlayer"
+                          Width="0"
+                          Height="0"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top"
+                          Margin="-2000,0,0,0"
+                          Visibility="Visible"
+                          IsHitTestVisible="False"/>
+
+        </Grid>
+
+    </Border>
+
+</Window>
