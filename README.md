@@ -1,5 +1,5 @@
 # YouTube-Music-Player
-This is a custom YouTube Music player I use, made public cause why not
+A Custom Windows Application that is a cleaner, light-weight and user friendly way to listen to music and game, not taking up much space on screen whilst also staying useable, without all the bloat of normal YouTube Music. and its add-free
 
 Images:
 
