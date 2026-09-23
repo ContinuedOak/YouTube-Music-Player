@@ -8,7 +8,7 @@
         <StackPanel>
 
             <TextBlock Text="{Binding Source={x:Static local:AppInfo.Version}, StringFormat=v{0}}"
-                       Foreground="#707070"
+                       Foreground="{DynamicResource LabelTextBrush}"
                        FontSize="11"
                        FontWeight="SemiBold"
                        HorizontalAlignment="Center"
@@ -17,17 +17,16 @@
             <Border Width="220"
                     Height="220"
                     CornerRadius="14"
-                    Background="#242424"
+                    Background="{DynamicResource AlbumBackgroundBrush}"
                     HorizontalAlignment="Center">
 
                 <Image x:Name="AlbumCover"
                        Stretch="UniformToFill"/>
-
             </Border>
 
             <TextBlock x:Name="SongTitleText"
                        Text="No song playing"
-                       Foreground="#F5F5F5"
+                       Foreground="{DynamicResource PrimaryTextBrush}"
                        FontSize="19"
                        FontWeight="SemiBold"
                        TextAlignment="Center"
@@ -36,19 +35,19 @@
                        Margin="0,14,0,0"/>
 
             <TextBlock x:Name="ChannelText"
-                       Text="YouTube Music"
-                       Foreground="#858585"
+                       Text="No Artist Found"
+                       Foreground="{DynamicResource SecondaryTextBrush}"
                        FontSize="14"
                        TextAlignment="Center"
                        HorizontalAlignment="Center"
                        TextTrimming="CharacterEllipsis"
                        Margin="0,4,0,0"/>
-
+            
             <Grid Margin="10,12,10,0">
 
                 <TextBlock x:Name="CurrentTimeText"
                            Text="0:00"
-                           Foreground="#707070"
+                           Foreground="{DynamicResource LabelTextBrush}"
                            FontSize="11"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"/>
@@ -68,7 +67,7 @@
                             <Grid VerticalAlignment="Center">
 
                                 <Border Height="8"
-                                        Background="#202020"
+                                        Background="{DynamicResource SurfaceBrush}"
                                         CornerRadius="4"/>
 
                                 <Track x:Name="PART_Track"
@@ -76,13 +75,13 @@
 
                                     <Track.DecreaseRepeatButton>
                                         <RepeatButton Command="Slider.DecreaseLarge"
-                                      Background="White"
+                                      Background="{DynamicResource ControlForegroundBrush}"
                                       BorderThickness="0"
                                       IsHitTestVisible="False">
 
                                             <RepeatButton.Template>
                                                 <ControlTemplate TargetType="RepeatButton">
-                                                    <Border Background="White"
+                                                    <Border Background="{DynamicResource ControlForegroundBrush}"
                                             Height="8"
                                             CornerRadius="4"/>
                                                 </ControlTemplate>
@@ -93,13 +92,13 @@
 
                                     <Track.IncreaseRepeatButton>
                                         <RepeatButton Command="Slider.IncreaseLarge"
-                                      Background="#202020"
+                                      Background="{DynamicResource ControlFillBrush}"
                                       BorderThickness="0"
                                       IsHitTestVisible="False">
 
                                             <RepeatButton.Template>
                                                 <ControlTemplate TargetType="RepeatButton">
-                                                    <Border Background="#202020"
+                                                    <Border Background="{DynamicResource ControlFillBrush}"
                                             Height="8"
                                             CornerRadius="4"/>
                                                 </ControlTemplate>
@@ -111,7 +110,7 @@
                                     <Track.Thumb>
                                         <Thumb Width="18"
                                                Height="18"
-                                               Background="White"
+                                               Background="{DynamicResource ControlForegroundBrush}"
                                                BorderThickness="0">
 
                                             <Thumb.Template>
@@ -119,7 +118,7 @@
 
                                                     <Ellipse Width="18"
                                                              Height="18"
-                                                             Fill="White"/>
+                                                             Fill="{DynamicResource ControlForegroundBrush}"/>
 
                                                 </ControlTemplate>
                                             </Thumb.Template>
@@ -137,20 +136,105 @@
                 </Slider>
                 <TextBlock x:Name="DurationText"
                            Text="0:00"
-                           Foreground="#707070"
+                           Foreground="{DynamicResource LabelTextBrush}"
                            FontSize="11"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Right"/>
 
             </Grid>
-
+            
+            <!-- Control Buttons -->
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Center"
-                        Margin="0,4,0,0">
+                        Margin="1,4,0,0">
+
+                <Button x:Name="ShuffleToggleButton"
+                        Content="🔀"
+                        Background="{DynamicResource ControlFillBrush}"
+                        Foreground="{DynamicResource ControlForegroundBrush}"
+                        Margin="8,0"
+                        FontSize="15"
+                        Width="36"
+                        Height="36"
+                        Click="Shuffle_Click">
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+
+                            <Border x:Name="ButtonBorder"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="24"
+                                    RenderTransformOrigin="0.5,0.5">
+
+                                <Border.RenderTransform>
+                                    <ScaleTransform ScaleX="1"
+                                    ScaleY="1"/>
+                                </Border.RenderTransform>
+
+                                <ContentPresenter
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"/>
+
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+
+                                    <Trigger.EnterActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                                    Storyboard.TargetName="ButtonBorder"
+                                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                                    To="1.12"
+                                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                                    Storyboard.TargetName="ButtonBorder"
+                                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                                    To="1.12"
+                                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.EnterActions>
+
+                                    <Trigger.ExitActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                                    Storyboard.TargetName="ButtonBorder"
+                                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                                    To="1"
+                                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                                    Storyboard.TargetName="ButtonBorder"
+                                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                                    To="1"
+                                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.ExitActions>
+
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
 
                 <Button Content="⏮"
-                        Background="#202020"
-                        Foreground="White"
+                        Background="{DynamicResource AlbumBackgroundBrush}"
+                        Foreground="{DynamicResource ControlForegroundBrush}"
+                        Margin="0,0"
                         FontSize="20"
                         Width="48"
                         Height="48"
@@ -158,39 +242,156 @@
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}"
-                                    CornerRadius="24">
+
+                            <Border x:Name="ButtonBorder"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="24"
+                                    RenderTransformOrigin="0.5,0.5">
+
+                                <Border.RenderTransform>
+                                    <ScaleTransform 
+                                        ScaleX="1"
+                                        ScaleY="1"/>
+                                </Border.RenderTransform>
 
                                 <ContentPresenter
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"/>
 
                             </Border>
+
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+
+                                    <Trigger.EnterActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                                    Storyboard.TargetName="ButtonBorder"
+                                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                                    To="1.12"
+                                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                                    Storyboard.TargetName="ButtonBorder"
+                                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                                    To="1.12"
+                                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.EnterActions>
+
+                                    <Trigger.ExitActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                                    Storyboard.TargetName="ButtonBorder"
+                                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                                    To="1"
+                                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                                    Storyboard.TargetName="ButtonBorder"
+                                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                                    To="1"
+                                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.ExitActions>
+
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+
                         </ControlTemplate>
                     </Button.Template>
 
                 </Button>
 
                 <Button x:Name="PlayButton"
-                        Content="▶"
-                        FontSize="25"
-                        Width="58"
-                        Height="58"
-                        Margin="8,0"
+                        Content="▶"       
+                        FontSize="25"        
+                        Width="58"       
+                        Height="58"       
+                        Margin="8,0"    
                         Click="PlayButton_Click"
-                        Background="#202020"
-                        Foreground="White">
+                        Background="{DynamicResource AlbumBackgroundBrush}"
+                        Foreground="{DynamicResource ControlForegroundBrush}">
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}"
-                                    CornerRadius="29">
+
+                            <Border x:Name="ButtonBorder"
+                    Background="{TemplateBinding Background}"
+                    CornerRadius="29"
+                    RenderTransformOrigin="0.5,0.5">
+
+                                <Border.RenderTransform>
+                                    <ScaleTransform ScaleX="1"
+                                  ScaleY="1"/>
+                                </Border.RenderTransform>
 
                                 <ContentPresenter
-                                    HorizontalAlignment="Center"
-                                    VerticalAlignment="Center"/>
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
 
                             </Border>
+
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver"
+                         Value="True">
+
+                                    <Trigger.EnterActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                    To="1.12"
+                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                    To="1.12"
+                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.EnterActions>
+
+                                    <Trigger.ExitActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                    To="1"
+                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                    To="1"
+                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.ExitActions>
+
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+
                         </ControlTemplate>
                     </Button.Template>
 
@@ -201,19 +402,160 @@
                         Width="48"
                         Height="48"
                         Click="NextButton_Click"
-                        Background="#202020"
-                        Foreground="White">
+                        Background="{DynamicResource AlbumBackgroundBrush}"
+                        Foreground="{DynamicResource ControlForegroundBrush}">
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}"
-                                    CornerRadius="24">
+
+                            <Border x:Name="ButtonBorder"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="24"
+                                    RenderTransformOrigin="0.5,0.5">
+
+                                <Border.RenderTransform>
+                                    <ScaleTransform ScaleX="1"
+                                    ScaleY="1"/>
+                                </Border.RenderTransform>
 
                                 <ContentPresenter
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"/>
 
                             </Border>
+
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+
+                                    <Trigger.EnterActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                    To="1.12"
+                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                    To="1.12"
+                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.EnterActions>
+
+                                    <Trigger.ExitActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                    To="1"
+                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                    To="1"
+                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.ExitActions>
+
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+
+                <Button x:Name="RepeatToggleButton"
+                        Content="🔁"
+                        Background="{DynamicResource MutedTextBrush}"
+                        Foreground="{DynamicResource ControlForegroundBrush}"
+                        Margin="8,0"
+                        FontSize="15"
+                        Width="36"
+                        Height="36"
+                        Click="Repeat_Click">
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+
+                            <Border x:Name="ButtonBorder"
+                    Background="{TemplateBinding Background}"
+                    CornerRadius="24"
+                    RenderTransformOrigin="0.5,0.5">
+
+                                <Border.RenderTransform>
+                                    <ScaleTransform ScaleX="1"
+                                    ScaleY="1"/>
+                                </Border.RenderTransform>
+
+                                <ContentPresenter
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+
+                                <Trigger Property="IsMouseOver"
+                         Value="True">
+
+                                    <Trigger.EnterActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                    To="1.12"
+                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                    To="1.12"
+                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.EnterActions>
+
+                                    <Trigger.ExitActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                    To="1"
+                                    Duration="0:0:0.12"/>
+
+                                                <DoubleAnimation
+                                    Storyboard.TargetName="ButtonBorder"
+                                    Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                    To="1"
+                                    Duration="0:0:0.12"/>
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.ExitActions>
+
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+
                         </ControlTemplate>
                     </Button.Template>
 
@@ -222,23 +564,23 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal"
-                        HorizontalAlignment="Center"
-                        Margin="0,6,0,0">
+            HorizontalAlignment="Center"
+            Margin="0,6,0,0">
 
                 <TextBlock x:Name="VolumeIcon"
-                           Text="🔊"
-                           Foreground="#B8B8B8"
-                           FontSize="14"
-                           VerticalAlignment="Center"
-                           Margin="0,0,8,0"/>
+               Text="🔊"
+               Foreground="{DynamicResource PrimaryTextBrush}"
+               FontSize="14"
+               VerticalAlignment="Center"
+               Margin="0,0,8,0"/>
 
                 <Slider x:Name="VolumeSlider"
-                        Width="110"
-                        Minimum="0"
-                        Maximum="100"
-                        Value="100"
-                        Height="22"
-                        ValueChanged="VolumeSlider_ValueChanged">
+            Width="110"
+            Minimum="0"
+            Maximum="100"
+            Value="100"
+            Height="22"
+            ValueChanged="VolumeSlider_ValueChanged">
 
                     <Slider.Template>
                         <ControlTemplate TargetType="Slider">
@@ -246,21 +588,21 @@
                             <Grid VerticalAlignment="Center">
 
                                 <Border Height="8"
-                                        Background="#202020"
-                                        CornerRadius="4"/>
+                            Background="{DynamicResource SurfaceBrush}"
+                            CornerRadius="4"/>
 
                                 <Track x:Name="PART_Track"
-                                       VerticalAlignment="Center">
+                           VerticalAlignment="Center">
 
                                     <Track.DecreaseRepeatButton>
                                         <RepeatButton Command="Slider.DecreaseLarge"
-                                          Background="White"
+                                          Background="{DynamicResource ControlForegroundBrush}"
                                           BorderThickness="0"
                                           IsHitTestVisible="False">
 
                                             <RepeatButton.Template>
                                                 <ControlTemplate TargetType="RepeatButton">
-                                                    <Border Background="White"
+                                                    <Border Background="{DynamicResource ControlForegroundBrush}"
                                                 Height="8"
                                                 CornerRadius="4"/>
                                                 </ControlTemplate>
@@ -271,13 +613,13 @@
 
                                     <Track.IncreaseRepeatButton>
                                         <RepeatButton Command="Slider.IncreaseLarge"
-                                          Background="#202020"
+                                          Background="{DynamicResource ControlFillBrush}"
                                           BorderThickness="0"
                                           IsHitTestVisible="False">
 
                                             <RepeatButton.Template>
                                                 <ControlTemplate TargetType="RepeatButton">
-                                                    <Border Background="#202020"
+                                                    <Border Background="{DynamicResource ControlFillBrush}"
                                                 Height="8"
                                                 CornerRadius="4"/>
                                                 </ControlTemplate>
@@ -287,16 +629,17 @@
                                     </Track.IncreaseRepeatButton>
 
                                     <Track.Thumb>
-                                        <Thumb Width="18"
+                                        <Thumb Width="12"
                                                Height="18"
-                                               Background="White"
+                                               Background="{DynamicResource ControlForegroundBrush}"
                                                BorderThickness="0">
 
                                             <Thumb.Template>
                                                 <ControlTemplate TargetType="Thumb">
-                                                    <Ellipse Width="18"
-                                                 Height="18"
-                                                 Fill="White"/>
+                                                    <Border Width="18"
+                                                            Height="18"
+                                                            Background="{DynamicResource ControlForegroundBrush}"
+                                                            CornerRadius="2"/>
                                                 </ControlTemplate>
                                             </Thumb.Template>
 

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using OakMusic.Models;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
-using OakMusic.Models;
 
 namespace OakMusic.Services
 {
@@ -16,131 +17,326 @@ namespace OakMusic.Services
         private const string ClientName = "WEB_REMIX";
         private const string ClientVersion = "1.20260921.01.00";
 
+        private string? continuationToken;
+
+        private string currentSearchQuery = "";
+
+        private bool hasMoreResults;
+
+        public bool HasMoreResults =>
+            hasMoreResults &&
+            !string.IsNullOrWhiteSpace(
+                continuationToken);
+
         public YouTubeMusicService()
         {
-            httpClient = new HttpClient();
+            httpClient =
+                new HttpClient();
 
             httpClient.DefaultRequestHeaders.Add(
                 "User-Agent",
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " +
-                "(KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36");
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
+                "AppleWebKit/537.36 (KHTML, like Gecko) " +
+                "Chrome/153.0.0.0 Safari/537.36");
 
             httpClient.DefaultRequestHeaders.Add(
                 "Origin",
                 MusicHost);
         }
 
-        public async Task<List<Song>> SearchAsync(string query)
+        public async Task<List<Song>> SearchAsync(
+            string query,
+            CancellationToken cancellationToken = default)
         {
-            var results = new List<Song>();
+            currentSearchQuery =
+                query.Trim();
 
-            if (string.IsNullOrWhiteSpace(query))
-                return results;
+            continuationToken =
+                null;
 
-            var requestBody = new
+            hasMoreResults =
+                false;
+
+            if (string.IsNullOrWhiteSpace(
+                    currentSearchQuery))
             {
-                context = new
+                return new List<Song>();
+            }
+
+            return await RequestSearchPageAsync(
+                currentSearchQuery,
+                cancellationToken);
+        }
+
+        public async Task<List<Song>> LoadNextPageAsync(
+            CancellationToken cancellationToken = default)
+        {
+            if (!HasMoreResults)
+            {
+                return new List<Song>();
+            }
+
+            return await RequestContinuationPageAsync(
+                continuationToken!,
+                cancellationToken);
+        }
+
+        private async Task<List<Song>> RequestSearchPageAsync(
+            string query,
+            CancellationToken cancellationToken)
+        {
+            var results =
+                new List<Song>();
+
+            var requestBody =
+                new
                 {
-                    client = new
-                    {
-                        clientName = ClientName,
-                        clientVersion = ClientVersion,
-                        hl = "en",
-                        gl = "AU"
-                    }
-                },
-                query = query
-            };
+                    context = CreateContext(),
+                    query = query
+                };
 
-            string json = JsonSerializer.Serialize(requestBody);
+            string json =
+                JsonSerializer.Serialize(
+                    requestBody);
 
-            using var content = new StringContent(
-                json,
-                Encoding.UTF8,
-                "application/json");
+            using var content =
+                new StringContent(
+                    json,
+                    Encoding.UTF8,
+                    "application/json");
 
             string url =
                 $"{MusicHost}/youtubei/v1/search?prettyPrint=false";
 
             using HttpResponseMessage response =
-                await httpClient.PostAsync(url, content);
+                await httpClient.PostAsync(
+                    url,
+                    content,
+                    cancellationToken);
 
             response.EnsureSuccessStatusCode();
 
             string responseJson =
-                await response.Content.ReadAsStringAsync();
+                await response.Content.ReadAsStringAsync(
+                    cancellationToken);
 
             using JsonDocument document =
-                JsonDocument.Parse(responseJson);
+                JsonDocument.Parse(
+                    responseJson);
+
+            JsonElement root =
+                document.RootElement;
 
             ExtractSongs(
-                document.RootElement,
+                root,
                 results);
 
-            foreach (Song song in results)
-            {
-                var metadata =
-                    await GetVideoMetadataAsync(song.VideoId);
+            continuationToken =
+                FindContinuationToken(
+                    root);
 
-                if (!string.IsNullOrWhiteSpace(metadata.ChannelName))
+            hasMoreResults =
+                !string.IsNullOrWhiteSpace(
+                    continuationToken);
+
+            await LoadMetadataAsync(
+                results,
+                cancellationToken);
+
+            return results;
+        }
+
+        private async Task<List<Song>> RequestContinuationPageAsync(
+            string token,
+            CancellationToken cancellationToken)
+        {
+            var results =
+                new List<Song>();
+
+            var requestBody =
+                new
+                {
+                    context = CreateContext(),
+                    continuation = token
+                };
+
+            string json =
+                JsonSerializer.Serialize(
+                    requestBody);
+
+            using var content =
+                new StringContent(
+                    json,
+                    Encoding.UTF8,
+                    "application/json");
+
+            string url =
+                $"{MusicHost}/youtubei/v1/search?prettyPrint=false";
+
+            using HttpResponseMessage response =
+                await httpClient.PostAsync(
+                    url,
+                    content,
+                    cancellationToken);
+
+            response.EnsureSuccessStatusCode();
+
+            string responseJson =
+                await response.Content.ReadAsStringAsync(
+                    cancellationToken);
+
+            using JsonDocument document =
+                JsonDocument.Parse(
+                    responseJson);
+
+            JsonElement root =
+                document.RootElement;
+
+            ExtractSongs(
+                root,
+                results);
+
+            continuationToken =
+                FindContinuationToken(
+                    root);
+
+            hasMoreResults =
+                !string.IsNullOrWhiteSpace(
+                    continuationToken);
+
+            await LoadMetadataAsync(
+                results,
+                cancellationToken);
+
+            return results;
+        }
+
+        private object CreateContext()
+        {
+            return new
+            {
+                client = new
+                {
+                    clientName =
+                        ClientName,
+
+                    clientVersion =
+                        ClientVersion,
+
+                    hl = "en",
+
+                    gl = "AU"
+                }
+            };
+        }
+
+        private async Task LoadMetadataAsync(
+            List<Song> songs,
+            CancellationToken cancellationToken)
+        {
+            var tasks =
+                new List<Task>();
+
+            foreach (Song song in songs)
+            {
+                tasks.Add(
+                    LoadSongMetadataAsync(
+                        song,
+                        cancellationToken));
+            }
+
+            await Task.WhenAll(
+                tasks);
+        }
+
+        private async Task LoadSongMetadataAsync(
+            Song song,
+            CancellationToken cancellationToken)
+        {
+            try
+            {
+                (
+                    string ChannelName,
+                    TimeSpan Duration
+                ) metadata =
+                    await GetVideoMetadataAsync(
+                        song.VideoId,
+                        cancellationToken);
+
+                if (!string.IsNullOrWhiteSpace(
+                        metadata.ChannelName))
                 {
                     song.ChannelName =
                         metadata.ChannelName;
                 }
 
-                if (metadata.Duration != TimeSpan.Zero)
+                if (metadata.Duration !=
+                    TimeSpan.Zero)
                 {
                     song.Duration =
                         metadata.Duration;
                 }
             }
-
-            return results;
+            catch
+            {
+            }
         }
 
         private void ExtractSongs(
             JsonElement element,
             List<Song> results)
         {
-            if (element.ValueKind == JsonValueKind.Object)
+            if (element.ValueKind ==
+                JsonValueKind.Object)
             {
                 if (element.TryGetProperty(
                     "musicResponsiveListItemRenderer",
                     out JsonElement renderer))
                 {
-                    Song? song = ParseSong(renderer);
+                    Song? song =
+                        ParseSong(
+                            renderer);
 
                     if (song != null &&
-                        !string.IsNullOrEmpty(song.VideoId))
+                        !string.IsNullOrEmpty(
+                            song.VideoId))
                     {
-                        bool duplicate = false;
+                        bool duplicate =
+                            false;
 
                         foreach (Song existing in results)
                         {
-                            if (existing.VideoId == song.VideoId)
+                            if (existing.VideoId ==
+                                song.VideoId)
                             {
-                                duplicate = true;
+                                duplicate =
+                                    true;
+
                                 break;
                             }
                         }
 
                         if (!duplicate)
                         {
-                            results.Add(song);
+                            results.Add(
+                                song);
                         }
                     }
                 }
 
-                foreach (JsonProperty property in element.EnumerateObject())
+                foreach (JsonProperty property in
+                         element.EnumerateObject())
                 {
                     ExtractSongs(
                         property.Value,
                         results);
                 }
             }
-            else if (element.ValueKind == JsonValueKind.Array)
+            else if (element.ValueKind ==
+                     JsonValueKind.Array)
             {
-                foreach (JsonElement child in element.EnumerateArray())
+                foreach (JsonElement child in
+                         element.EnumerateArray())
                 {
                     ExtractSongs(
                         child,
@@ -149,9 +345,11 @@ namespace OakMusic.Services
             }
         }
 
-        private Song? ParseSong(JsonElement renderer)
+        private Song? ParseSong(
+            JsonElement renderer)
         {
-            string videoId = "";
+            string videoId =
+                "";
 
             if (renderer.TryGetProperty(
                 "playlistItemData",
@@ -161,39 +359,66 @@ namespace OakMusic.Services
                     "videoId",
                     out JsonElement videoIdElement))
                 {
-                    videoId = GetTextValue(videoIdElement);
+                    videoId =
+                        GetTextValue(
+                            videoIdElement);
                 }
             }
 
-            if (string.IsNullOrEmpty(videoId))
+            if (string.IsNullOrEmpty(
+                    videoId))
             {
-                videoId = FindVideoId(renderer);
+                videoId =
+                    FindVideoId(
+                        renderer);
             }
 
-            if (string.IsNullOrEmpty(videoId))
+            if (string.IsNullOrEmpty(
+                    videoId))
+            {
                 return null;
+            }
 
-            string title = "";
-            string artist = "";
-            string album = "";
-            string thumbnail = "";
-            TimeSpan duration = TimeSpan.Zero;
+            string title =
+                "";
+
+            string artist =
+                "";
+
+            string album =
+                "";
+
+            string thumbnail =
+                "";
+
+            TimeSpan duration =
+                TimeSpan.Zero;
 
             if (renderer.TryGetProperty(
                 "flexColumns",
                 out JsonElement flexColumns))
             {
                 List<string> texts =
-                    ExtractTextValues(flexColumns);
+                    ExtractTextValues(
+                        flexColumns);
 
                 if (texts.Count > 0)
-                    title = texts[0];
+                {
+                    title =
+                        texts[0];
+                }
 
                 if (texts.Count > 1)
-                    artist = texts[1];
+                {
+                    artist =
+                        texts[1];
+                }
 
                 if (texts.Count > 2)
-                    album = texts[2];
+                {
+                    album =
+                        texts[2];
+                }
             }
 
             if (renderer.TryGetProperty(
@@ -201,7 +426,8 @@ namespace OakMusic.Services
                 out JsonElement thumbnailElement))
             {
                 thumbnail =
-                    FindThumbnailUrl(thumbnailElement);
+                    FindThumbnailUrl(
+                        thumbnailElement);
             }
 
             if (renderer.TryGetProperty(
@@ -209,130 +435,99 @@ namespace OakMusic.Services
                 out JsonElement fixedColumns))
             {
                 string durationText =
-                    FindText(fixedColumns);
+                    FindText(
+                        fixedColumns);
 
                 duration =
-                    ParseDuration(durationText);
+                    ParseDuration(
+                        durationText);
             }
 
             return new Song
             {
-                VideoId = videoId,
-                Title = title,
-                Artist = artist,
-                ChannelName = "",
-                Album = album,
-                ThumbnailUrl = thumbnail,
-                Duration = duration
+                VideoId =
+                    videoId,
+
+                Title =
+                    title,
+
+                Artist =
+                    artist,
+
+                ChannelName =
+                    "",
+
+                Album =
+                    album,
+
+                ThumbnailUrl =
+                    thumbnail,
+
+                Duration =
+                    duration
             };
         }
 
-        private string FindChannelName(JsonElement element)
-        {
-            if (element.ValueKind == JsonValueKind.Object)
-            {
-                if (element.TryGetProperty(
-                    "navigationEndpoint",
-                    out JsonElement navigationEndpoint))
-                {
-                    if (navigationEndpoint.TryGetProperty(
-                        "browseEndpoint",
-                        out JsonElement browseEndpoint))
-                    {
-                        if (browseEndpoint.TryGetProperty(
-                            "browseId",
-                            out JsonElement browseId))
-                        {
-                            string id = GetTextValue(browseId);
-
-                            if (id.StartsWith("UC"))
-                            {
-                                if (element.TryGetProperty(
-                                    "text",
-                                    out JsonElement text))
-                                {
-                                    string channel =
-                                        GetTextValue(text);
-
-                                    if (!string.IsNullOrWhiteSpace(channel))
-                                        return channel;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                foreach (JsonProperty property in element.EnumerateObject())
-                {
-                    string result =
-                        FindChannelName(property.Value);
-
-                    if (!string.IsNullOrEmpty(result))
-                        return result;
-                }
-            }
-            else if (element.ValueKind == JsonValueKind.Array)
-            {
-                foreach (JsonElement child in element.EnumerateArray())
-                {
-                    string result =
-                        FindChannelName(child);
-
-                    if (!string.IsNullOrEmpty(result))
-                        return result;
-                }
-            }
-
-            return "";
-        }
-        private async Task<(string ChannelName, TimeSpan Duration)> GetVideoMetadataAsync(
-    string videoId)
+        private async Task<(
+            string ChannelName,
+            TimeSpan Duration)> GetVideoMetadataAsync(
+                string videoId,
+                CancellationToken cancellationToken)
         {
             try
             {
-                var requestBody = new
-                {
-                    context = new
+                var requestBody =
+                    new
                     {
-                        client = new
-                        {
-                            clientName = ClientName,
-                            clientVersion = ClientVersion,
-                            hl = "en",
-                            gl = "AU"
-                        }
-                    },
-                    videoId = videoId
-                };
+                        context =
+                            CreateContext(),
+
+                        videoId =
+                            videoId
+                    };
 
                 string json =
-                    JsonSerializer.Serialize(requestBody);
+                    JsonSerializer.Serialize(
+                        requestBody);
 
-                using var content = new StringContent(
-                    json,
-                    Encoding.UTF8,
-                    "application/json");
+                using var content =
+                    new StringContent(
+                        json,
+                        Encoding.UTF8,
+                        "application/json");
 
                 string url =
                     $"{MusicHost}/youtubei/v1/player?prettyPrint=false";
 
                 using HttpResponseMessage response =
-                    await httpClient.PostAsync(url, content);
+                    await httpClient.PostAsync(
+                        url,
+                        content,
+                        cancellationToken);
 
                 if (!response.IsSuccessStatusCode)
-                    return ("", TimeSpan.Zero);
+                {
+                    return (
+                        "",
+                        TimeSpan.Zero);
+                }
 
                 string responseJson =
-                    await response.Content.ReadAsStringAsync();
+                    await response.Content.ReadAsStringAsync(
+                        cancellationToken);
 
                 using JsonDocument document =
-                    JsonDocument.Parse(responseJson);
+                    JsonDocument.Parse(
+                        responseJson);
 
                 JsonElement root =
                     document.RootElement;
 
-                string channelName = "";
-                TimeSpan duration = TimeSpan.Zero;
+                string channelName =
+                    "";
+
+                TimeSpan duration =
+                    TimeSpan.Zero;
 
                 if (root.TryGetProperty(
                     "videoDetails",
@@ -343,7 +538,8 @@ namespace OakMusic.Services
                         out JsonElement author))
                     {
                         channelName =
-                            GetTextValue(author);
+                            GetTextValue(
+                                author);
                     }
 
                     if (videoDetails.TryGetProperty(
@@ -351,63 +547,165 @@ namespace OakMusic.Services
                         out JsonElement lengthSeconds))
                     {
                         string length =
-                            GetTextValue(lengthSeconds);
+                            GetTextValue(
+                                lengthSeconds);
 
                         if (int.TryParse(
                             length,
                             out int seconds))
                         {
                             duration =
-                                TimeSpan.FromSeconds(seconds);
+                                TimeSpan.FromSeconds(
+                                    seconds);
                         }
                     }
                 }
 
-                return (channelName, duration);
+                return (
+                    channelName,
+                    duration);
+            }
+            catch (OperationCanceledException)
+            {
+                throw;
             }
             catch
             {
-                return ("", TimeSpan.Zero);
+                return (
+                    "",
+                    TimeSpan.Zero);
             }
         }
 
-        private string GetTextValue(JsonElement element)
+        private string? FindContinuationToken(
+            JsonElement element)
         {
-            if (element.ValueKind == JsonValueKind.String)
+            if (element.ValueKind ==
+                JsonValueKind.Object)
             {
-                return element.GetString() ?? "";
+                if (element.TryGetProperty(
+                    "continuationCommand",
+                    out JsonElement continuationCommand))
+                {
+                    if (continuationCommand.TryGetProperty(
+                        "token",
+                        out JsonElement token))
+                    {
+                        string value =
+                            GetTextValue(
+                                token);
+
+                        if (!string.IsNullOrWhiteSpace(
+                                value))
+                        {
+                            return value;
+                        }
+                    }
+                }
+
+                if (element.TryGetProperty(
+                    "nextContinuationData",
+                    out JsonElement nextContinuationData))
+                {
+                    if (nextContinuationData.TryGetProperty(
+                        "continuation",
+                        out JsonElement continuation))
+                    {
+                        string value =
+                            GetTextValue(
+                                continuation);
+
+                        if (!string.IsNullOrWhiteSpace(
+                                value))
+                        {
+                            return value;
+                        }
+                    }
+                }
+
+                foreach (JsonProperty property in
+                         element.EnumerateObject())
+                {
+                    string? result =
+                        FindContinuationToken(
+                            property.Value);
+
+                    if (!string.IsNullOrWhiteSpace(
+                            result))
+                    {
+                        return result;
+                    }
+                }
+            }
+            else if (element.ValueKind ==
+                     JsonValueKind.Array)
+            {
+                foreach (JsonElement child in
+                         element.EnumerateArray())
+                {
+                    string? result =
+                        FindContinuationToken(
+                            child);
+
+                    if (!string.IsNullOrWhiteSpace(
+                            result))
+                    {
+                        return result;
+                    }
+                }
             }
 
-            if (element.ValueKind == JsonValueKind.Object)
+            return null;
+        }
+
+        private string GetTextValue(
+            JsonElement element)
+        {
+            if (element.ValueKind ==
+                JsonValueKind.String)
+            {
+                return element.GetString() ??
+                       "";
+            }
+
+            if (element.ValueKind ==
+                JsonValueKind.Object)
             {
                 if (element.TryGetProperty(
                     "simpleText",
                     out JsonElement simpleText))
                 {
-                    return GetTextValue(simpleText);
+                    return GetTextValue(
+                        simpleText);
                 }
 
                 if (element.TryGetProperty(
                     "text",
                     out JsonElement text))
                 {
-                    return GetTextValue(text);
+                    return GetTextValue(
+                        text);
                 }
 
                 if (element.TryGetProperty(
                     "runs",
                     out JsonElement runs) &&
-                    runs.ValueKind == JsonValueKind.Array)
+                    runs.ValueKind ==
+                        JsonValueKind.Array)
                 {
-                    string result = "";
+                    string result =
+                        "";
 
-                    foreach (JsonElement run in runs.EnumerateArray())
+                    foreach (JsonElement run in
+                             runs.EnumerateArray())
                     {
                         if (run.TryGetProperty(
                             "text",
                             out JsonElement runText))
                         {
-                            result += GetTextValue(runText);
+                            result +=
+                                GetTextValue(
+                                    runText);
                         }
                     }
 
@@ -418,9 +716,11 @@ namespace OakMusic.Services
             return "";
         }
 
-        private string FindVideoId(JsonElement element)
+        private string FindVideoId(
+            JsonElement element)
         {
-            if (element.ValueKind == JsonValueKind.Object)
+            if (element.ValueKind ==
+                JsonValueKind.Object)
             {
                 if (element.TryGetProperty(
                     "watchEndpoint",
@@ -430,39 +730,40 @@ namespace OakMusic.Services
                         "videoId",
                         out JsonElement videoId))
                     {
-                        return GetTextValue(videoId);
+                        return GetTextValue(
+                            videoId);
                     }
                 }
 
-                if (element.TryGetProperty(
-                    "watchEndpoint",
-                    out JsonElement endpoint))
+                foreach (JsonProperty property in
+                         element.EnumerateObject())
                 {
                     string result =
-                        FindVideoId(endpoint);
+                        FindVideoId(
+                            property.Value);
 
-                    if (!string.IsNullOrEmpty(result))
+                    if (!string.IsNullOrEmpty(
+                            result))
+                    {
                         return result;
-                }
-
-                foreach (JsonProperty property in element.EnumerateObject())
-                {
-                    string result =
-                        FindVideoId(property.Value);
-
-                    if (!string.IsNullOrEmpty(result))
-                        return result;
+                    }
                 }
             }
-            else if (element.ValueKind == JsonValueKind.Array)
+            else if (element.ValueKind ==
+                     JsonValueKind.Array)
             {
-                foreach (JsonElement child in element.EnumerateArray())
+                foreach (JsonElement child in
+                         element.EnumerateArray())
                 {
                     string result =
-                        FindVideoId(child);
+                        FindVideoId(
+                            child);
 
-                    if (!string.IsNullOrEmpty(result))
+                    if (!string.IsNullOrEmpty(
+                            result))
+                    {
                         return result;
+                    }
                 }
             }
 
@@ -472,7 +773,8 @@ namespace OakMusic.Services
         private List<string> ExtractTextValues(
             JsonElement element)
         {
-            var values = new List<string>();
+            var values =
+                new List<string>();
 
             ExtractTextValuesRecursive(
                 element,
@@ -485,29 +787,36 @@ namespace OakMusic.Services
             JsonElement element,
             List<string> values)
         {
-            if (element.ValueKind == JsonValueKind.Object)
+            if (element.ValueKind ==
+                JsonValueKind.Object)
             {
                 if (element.TryGetProperty(
                     "runs",
                     out JsonElement runs) &&
-                    runs.ValueKind == JsonValueKind.Array)
+                    runs.ValueKind ==
+                        JsonValueKind.Array)
                 {
-                    string combined = "";
+                    string combined =
+                        "";
 
-                    foreach (JsonElement run in runs.EnumerateArray())
+                    foreach (JsonElement run in
+                             runs.EnumerateArray())
                     {
                         if (run.TryGetProperty(
                             "text",
                             out JsonElement runText))
                         {
                             combined +=
-                                GetTextValue(runText);
+                                GetTextValue(
+                                    runText);
                         }
                     }
 
-                    if (!string.IsNullOrWhiteSpace(combined))
+                    if (!string.IsNullOrWhiteSpace(
+                            combined))
                     {
-                        values.Add(combined);
+                        values.Add(
+                            combined);
                     }
                 }
                 else if (element.TryGetProperty(
@@ -515,18 +824,24 @@ namespace OakMusic.Services
                     out JsonElement simpleText))
                 {
                     string text =
-                        GetTextValue(simpleText);
+                        GetTextValue(
+                            simpleText);
 
-                    if (!string.IsNullOrWhiteSpace(text))
+                    if (!string.IsNullOrWhiteSpace(
+                            text))
                     {
-                        values.Add(text);
+                        values.Add(
+                            text);
                     }
                 }
 
-                foreach (JsonProperty property in element.EnumerateObject())
+                foreach (JsonProperty property in
+                         element.EnumerateObject())
                 {
-                    if (property.Name == "runs" ||
-                        property.Name == "simpleText")
+                    if (property.Name ==
+                            "runs" ||
+                        property.Name ==
+                            "simpleText")
                     {
                         continue;
                     }
@@ -536,9 +851,11 @@ namespace OakMusic.Services
                         values);
                 }
             }
-            else if (element.ValueKind == JsonValueKind.Array)
+            else if (element.ValueKind ==
+                     JsonValueKind.Array)
             {
-                foreach (JsonElement child in element.EnumerateArray())
+                foreach (JsonElement child in
+                         element.EnumerateArray())
                 {
                     ExtractTextValuesRecursive(
                         child,
@@ -547,20 +864,25 @@ namespace OakMusic.Services
             }
         }
 
-        private string FindText(JsonElement element)
+        private string FindText(
+            JsonElement element)
         {
-            if (element.ValueKind == JsonValueKind.String)
+            if (element.ValueKind ==
+                JsonValueKind.String)
             {
-                return element.GetString() ?? "";
+                return element.GetString() ??
+                       "";
             }
 
-            if (element.ValueKind == JsonValueKind.Object)
+            if (element.ValueKind ==
+                JsonValueKind.Object)
             {
                 if (element.TryGetProperty(
                     "simpleText",
                     out JsonElement simpleText))
                 {
-                    return GetTextValue(simpleText);
+                    return GetTextValue(
+                        simpleText);
                 }
 
                 if (element.TryGetProperty(
@@ -568,10 +890,14 @@ namespace OakMusic.Services
                     out JsonElement text))
                 {
                     string result =
-                        GetTextValue(text);
+                        GetTextValue(
+                            text);
 
-                    if (!string.IsNullOrEmpty(result))
+                    if (!string.IsNullOrEmpty(
+                            result))
+                    {
                         return result;
+                    }
                 }
 
                 if (element.TryGetProperty(
@@ -579,31 +905,46 @@ namespace OakMusic.Services
                     out JsonElement runs))
                 {
                     string result =
-                        GetTextValue(runs);
+                        GetTextValue(
+                            runs);
 
-                    if (!string.IsNullOrEmpty(result))
+                    if (!string.IsNullOrEmpty(
+                            result))
+                    {
                         return result;
+                    }
                 }
 
-                foreach (JsonProperty property in element.EnumerateObject())
+                foreach (JsonProperty property in
+                         element.EnumerateObject())
                 {
                     string result =
-                        FindText(property.Value);
+                        FindText(
+                            property.Value);
 
-                    if (!string.IsNullOrEmpty(result))
+                    if (!string.IsNullOrEmpty(
+                            result))
+                    {
                         return result;
+                    }
                 }
             }
 
-            if (element.ValueKind == JsonValueKind.Array)
+            if (element.ValueKind ==
+                JsonValueKind.Array)
             {
-                foreach (JsonElement child in element.EnumerateArray())
+                foreach (JsonElement child in
+                         element.EnumerateArray())
                 {
                     string result =
-                        FindText(child);
+                        FindText(
+                            child);
 
-                    if (!string.IsNullOrEmpty(result))
+                    if (!string.IsNullOrEmpty(
+                            result))
+                    {
                         return result;
+                    }
                 }
             }
 
@@ -613,68 +954,101 @@ namespace OakMusic.Services
         private string FindThumbnailUrl(
             JsonElement element)
         {
-            string bestUrl = "";
+            string bestUrl =
+                "";
 
-            if (element.ValueKind == JsonValueKind.Object)
+            if (element.ValueKind ==
+                JsonValueKind.Object)
             {
                 if (element.TryGetProperty(
                     "thumbnails",
                     out JsonElement thumbnails) &&
-                    thumbnails.ValueKind == JsonValueKind.Array)
+                    thumbnails.ValueKind ==
+                        JsonValueKind.Array)
                 {
-                    foreach (JsonElement thumbnail in thumbnails.EnumerateArray())
+                    foreach (JsonElement thumbnail in
+                             thumbnails.EnumerateArray())
                     {
                         if (thumbnail.TryGetProperty(
                             "url",
                             out JsonElement url))
                         {
                             string value =
-                                GetTextValue(url);
+                                GetTextValue(
+                                    url);
 
-                            if (!string.IsNullOrEmpty(value))
-                                bestUrl = value;
+                            if (!string.IsNullOrEmpty(
+                                    value))
+                            {
+                                bestUrl =
+                                    value;
+                            }
                         }
                     }
                 }
 
-                foreach (JsonProperty property in element.EnumerateObject())
+                foreach (JsonProperty property in
+                         element.EnumerateObject())
                 {
-                    if (property.Name == "thumbnails")
+                    if (property.Name ==
+                        "thumbnails")
+                    {
                         continue;
+                    }
 
                     string result =
-                        FindThumbnailUrl(property.Value);
+                        FindThumbnailUrl(
+                            property.Value);
 
-                    if (!string.IsNullOrEmpty(result))
-                        bestUrl = result;
+                    if (!string.IsNullOrEmpty(
+                            result))
+                    {
+                        bestUrl =
+                            result;
+                    }
                 }
             }
-            else if (element.ValueKind == JsonValueKind.Array)
+            else if (element.ValueKind ==
+                     JsonValueKind.Array)
             {
-                foreach (JsonElement child in element.EnumerateArray())
+                foreach (JsonElement child in
+                         element.EnumerateArray())
                 {
                     string result =
-                        FindThumbnailUrl(child);
+                        FindThumbnailUrl(
+                            child);
 
-                    if (!string.IsNullOrEmpty(result))
-                        bestUrl = result;
+                    if (!string.IsNullOrEmpty(
+                            result))
+                    {
+                        bestUrl =
+                            result;
+                    }
                 }
             }
 
             return bestUrl;
         }
 
-        private TimeSpan ParseDuration(string text)
+        private TimeSpan ParseDuration(
+            string text)
         {
-            if (string.IsNullOrWhiteSpace(text))
+            if (string.IsNullOrWhiteSpace(
+                    text))
+            {
                 return TimeSpan.Zero;
+            }
 
             string[] parts =
                 text.Split(':');
 
             if (parts.Length == 2 &&
-                int.TryParse(parts[0], out int minutes) &&
-                int.TryParse(parts[1], out int seconds))
+                int.TryParse(
+                    parts[0],
+                    out int minutes) &&
+                int.TryParse(
+                    parts[1],
+                    out int seconds))
             {
                 return new TimeSpan(
                     0,
@@ -683,9 +1057,15 @@ namespace OakMusic.Services
             }
 
             if (parts.Length == 3 &&
-                int.TryParse(parts[0], out int hours) &&
-                int.TryParse(parts[1], out int mins) &&
-                int.TryParse(parts[2], out int secs))
+                int.TryParse(
+                    parts[0],
+                    out int hours) &&
+                int.TryParse(
+                    parts[1],
+                    out int mins) &&
+                int.TryParse(
+                    parts[2],
+                    out int secs))
             {
                 return new TimeSpan(
                     hours,

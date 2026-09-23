@@ -1,0 +1,117 @@
+﻿<UserControl x:Class="OakMusic.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Margin="24,8,24,0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="SETTINGS"
+                   Foreground="{DynamicResource LabelTextBrush}"
+                   FontSize="11"
+                   FontWeight="SemiBold"
+                   Margin="2,0,0,10"/>
+
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+
+            <StackPanel>
+
+                <TextBlock Text="APPEARANCE"
+                           Foreground="{DynamicResource LabelTextBrush}"
+                           FontSize="10"
+                           FontWeight="SemiBold"
+                           Margin="2,8,0,8"/>
+
+                <Border Background="{DynamicResource AlbumBackgroundBrush}"
+                        CornerRadius="8"
+                        Margin="0,0,0,6"
+                        Padding="14,12">
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+
+                            <TextBlock Text="Dark mode"
+                                       Foreground="{DynamicResource PrimaryTextBrush}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+
+                            <TextBlock Text="Use the dark OakMusic interface"
+                                       Foreground="{DynamicResource LabelTextBrush}"
+                                       FontSize="11"
+                                       Margin="0,3,0,0"/>
+
+                        </StackPanel>
+
+                        <CheckBox x:Name="DarkModeCheckBox"
+                                  Grid.Column="1"
+                                  VerticalAlignment="Center"
+                                  IsChecked="True"
+                                  Checked="SettingChanged"
+                                  Unchecked="SettingChanged"/>
+
+                    </Grid>
+
+                </Border>
+
+                <TextBlock Text="WINDOW"
+                           Foreground="{DynamicResource LabelTextBrush}"
+                           FontSize="10"
+                           FontWeight="SemiBold"
+                           Margin="2,18,0,8"/>
+
+                <Border Background="{DynamicResource AlbumBackgroundBrush}"
+                        CornerRadius="8"
+                        Margin="0,0,0,6"
+                        Padding="14,12">
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+
+                            <TextBlock Text="Always on Top"
+                                       Foreground="{DynamicResource PrimaryTextBrush}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+
+                            <TextBlock Text="Keep OakMusic above other windows"
+                                       Foreground="{DynamicResource LabelTextBrush}"
+                                       FontSize="11"
+                                       Margin="0,3,0,0"/>
+
+                        </StackPanel>
+
+                        <CheckBox x:Name="AlwaysOnTopCheckBox"
+                                  Grid.Column="1"
+                                  VerticalAlignment="Center"
+                                  IsChecked="False"
+                                  Checked="SettingChanged"
+                                  Unchecked="SettingChanged"/>
+
+                    </Grid>
+
+                </Border>
+
+            </StackPanel>
+
+        </ScrollViewer>
+
+    </Grid>
+
+</UserControl>

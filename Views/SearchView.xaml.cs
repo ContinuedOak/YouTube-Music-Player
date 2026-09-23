@@ -13,18 +13,27 @@ namespace OakMusic.Views
     {
         private static readonly HttpClient HttpClient = new();
 
+        public event EventHandler? LoadMoreRequested;
+
         public SearchView()
         {
             InitializeComponent();
+
+            ResultsScrollViewer.ScrollChanged +=
+                ResultsScrollViewer_ScrollChanged;
         }
 
-        public void SetResults(
+        public void ClearResults()
+        {
+            SearchResultsPanel.Children.Clear();
+            ResultsScrollViewer.ScrollToTop();
+        }
+
+        public void AddResults(
             List<Song> results,
             RoutedEventHandler clickHandler,
             RoutedEventHandler addHandler)
         {
-            SearchResultsPanel.Children.Clear();
-
             foreach (Song song in results)
             {
                 Grid row =
@@ -41,6 +50,26 @@ namespace OakMusic.Views
             }
         }
 
+        private void ResultsScrollViewer_ScrollChanged(
+            object sender,
+            ScrollChangedEventArgs e)
+        {
+            if (e.ExtentHeight <= 0)
+                return;
+
+            double remaining =
+                e.ExtentHeight -
+                e.VerticalOffset -
+                e.ViewportHeight;
+
+            if (remaining <= 500)
+            {
+                LoadMoreRequested?.Invoke(
+                    this,
+                    EventArgs.Empty);
+            }
+        }
+
         private Grid CreateResultRow(
             Song song,
             RoutedEventHandler clickHandler,
@@ -50,7 +79,12 @@ namespace OakMusic.Views
                 new Grid
                 {
                     Height = 64,
-                    Margin = new Thickness(0, 0, 0, 6)
+                    Margin =
+                        new Thickness(
+                            0,
+                            0,
+                            0,
+                            6)
                 };
 
             row.ColumnDefinitions.Add(
@@ -65,7 +99,8 @@ namespace OakMusic.Views
             row.ColumnDefinitions.Add(
                 new ColumnDefinition
                 {
-                    Width = new GridLength(42)
+                    Width =
+                        new GridLength(42)
                 });
 
             Button songButton =
@@ -73,20 +108,20 @@ namespace OakMusic.Views
                 {
                     Tag = song,
                     Height = 64,
-                    Padding = new Thickness(8),
+                    Padding =
+                        new Thickness(8),
                     HorizontalContentAlignment =
                         HorizontalAlignment.Stretch,
                     Background =
-                        new SolidColorBrush(
-                            Color.FromRgb(32, 32, 32)),
+                        (Brush)FindResource("AlbumBackgroundBrush"),
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(235, 235, 235)),
+                        (Brush)FindResource("AlbumBackgroundBrush"),
                     BorderThickness =
                         new Thickness(0)
                 };
 
-            songButton.Click += clickHandler;
+            songButton.Click +=
+                clickHandler;
 
             Grid.SetColumn(
                 songButton,
@@ -98,7 +133,8 @@ namespace OakMusic.Views
             content.ColumnDefinitions.Add(
                 new ColumnDefinition
                 {
-                    Width = new GridLength(48)
+                    Width =
+                        new GridLength(48)
                 });
 
             content.ColumnDefinitions.Add(
@@ -113,7 +149,8 @@ namespace OakMusic.Views
             content.ColumnDefinitions.Add(
                 new ColumnDefinition
                 {
-                    Width = new GridLength(50)
+                    Width =
+                        new GridLength(50)
                 });
 
             Border cover =
@@ -124,8 +161,7 @@ namespace OakMusic.Views
                     CornerRadius =
                         new CornerRadius(6),
                     Background =
-                        new SolidColorBrush(
-                            Color.FromRgb(45, 45, 45))
+                        (Brush)FindResource("AlbumBackgroundBrush"),
                 };
 
             TextBlock musicIcon =
@@ -133,8 +169,7 @@ namespace OakMusic.Views
                 {
                     Text = "♪",
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(90, 90, 90)),
+                        (Brush)FindResource("PrimaryTextBrush"),
                     FontSize = 20,
                     HorizontalAlignment =
                         HorizontalAlignment.Center,
@@ -142,13 +177,15 @@ namespace OakMusic.Views
                         VerticalAlignment.Center
                 };
 
-            cover.Child = musicIcon;
+            cover.Child =
+                musicIcon;
 
             Grid.SetColumn(
                 cover,
                 0);
 
-            content.Children.Add(cover);
+            content.Children.Add(
+                cover);
 
             StackPanel textPanel =
                 new StackPanel
@@ -168,8 +205,7 @@ namespace OakMusic.Views
                 {
                     Text = song.Title,
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(235, 235, 235)),
+                        (Brush)FindResource("PrimaryTextBrush"),
                     FontSize = 13,
                     FontWeight =
                         FontWeights.SemiBold,
@@ -187,12 +223,12 @@ namespace OakMusic.Views
                 new TextBlock
                 {
                     Text =
-                        string.IsNullOrWhiteSpace(artist)
+                        string.IsNullOrWhiteSpace(
+                            artist)
                             ? "YouTube Music"
                             : artist,
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(125, 125, 125)),
+                        (Brush)FindResource("SecondaryTextBrush"),
                     FontSize = 11,
                     Margin =
                         new Thickness(
@@ -204,22 +240,25 @@ namespace OakMusic.Views
                         TextTrimming.CharacterEllipsis
                 };
 
-            textPanel.Children.Add(title);
-            textPanel.Children.Add(artistText);
+            textPanel.Children.Add(
+                title);
+
+            textPanel.Children.Add(
+                artistText);
 
             Grid.SetColumn(
                 textPanel,
                 1);
 
-            content.Children.Add(textPanel);
+            content.Children.Add(
+                textPanel);
 
             TextBlock duration =
                 new TextBlock
                 {
                     Text = song.DurationText,
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(105, 105, 105)),
+                        (Brush)FindResource("LabelTextBrush"),
                     FontSize = 11,
                     VerticalAlignment =
                         VerticalAlignment.Center,
@@ -231,11 +270,14 @@ namespace OakMusic.Views
                 duration,
                 2);
 
-            content.Children.Add(duration);
+            content.Children.Add(
+                duration);
 
-            songButton.Content = content;
+            songButton.Content =
+                content;
 
-            row.Children.Add(songButton);
+            row.Children.Add(
+                songButton);
 
             Button addButton =
                 new Button
@@ -245,11 +287,9 @@ namespace OakMusic.Views
                     Width = 42,
                     Height = 64,
                     Background =
-                        new SolidColorBrush(
-                            Color.FromRgb(32, 32, 32)),
+                        (Brush)FindResource("AlbumBackgroundBrush"),
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(180, 180, 180)),
+                        (Brush)FindResource("PrimaryTextBrush"),
                     BorderThickness =
                         new Thickness(0),
                     FontSize = 20,
@@ -257,13 +297,15 @@ namespace OakMusic.Views
                         FontWeights.Normal
                 };
 
-            addButton.Click += addHandler;
+            addButton.Click +=
+                addHandler;
 
             Grid.SetColumn(
                 addButton,
                 1);
 
-            row.Children.Add(addButton);
+            row.Children.Add(
+                addButton);
 
             return row;
         }
@@ -280,10 +322,12 @@ namespace OakMusic.Views
             try
             {
                 byte[] data =
-                    await HttpClient.GetByteArrayAsync(url);
+                    await HttpClient.GetByteArrayAsync(
+                        url);
 
                 using var stream =
-                    new System.IO.MemoryStream(data);
+                    new System.IO.MemoryStream(
+                        data);
 
                 BitmapImage image =
                     new BitmapImage();

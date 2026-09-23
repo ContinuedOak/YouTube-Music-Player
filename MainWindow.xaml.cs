@@ -14,12 +14,17 @@ namespace OakMusic
 {
     public partial class MainWindow : Window
     {
+        private readonly SettingsService settingsService;
+
         private enum AppView
         {
             Player,
             Search,
-            Playlists
+            Playlists,
+            Settings
         }
+
+        private AppView currentView = AppView.Player;
 
         private readonly YouTubeMusicService musicService;
 
@@ -28,6 +33,16 @@ namespace OakMusic
 
         private List<Song> playbackQueue =
             new();
+
+        private List<Song> shuffleQueue =
+            new();
+
+        private readonly Random random =
+            new();
+
+        private CancellationTokenSource? searchCancellation;
+
+        private bool isLoadingMoreSearchResults;
 
         private Song? currentSong;
 
@@ -86,6 +101,12 @@ namespace OakMusic
             PlayerView.ProgressChanged +=
                 ProgressSlider_ValueChanged;
 
+            PlayerView.ShuffleClicked +=
+                ShuffleButton_Click;
+
+            PlayerView.RepeatClicked +=
+                RepeatButton_Click;
+
             playlistService =
                 new PlaylistService();
 
@@ -116,7 +137,47 @@ namespace OakMusic
             PlaylistView.SetPlaylists(
                 playlists);
 
+            settingsService =
+                new SettingsService();
+
+            SettingsView.Initialize(
+                settingsService);
+
+            PlayerView.Initialize(
+                settingsService);
+
+            SettingsView.SettingsChanged +=
+                SettingsView_SettingsChanged;
+
+            settingsService = new SettingsService();
+
+            ApplyTheme();
+
+            SettingsView.Initialize(settingsService);
+
+            SettingsView.SettingsChanged +=
+                SettingsView_SettingsChanged;
+
+            Topmost =
+                settingsService.Settings.AlwaysOnTop;
+
             InitializePlayerAsync();
+        }
+
+        private void ApplyTheme()
+        {
+            ResourceDictionary theme =
+                new ResourceDictionary
+                {
+                    Source = new Uri(
+                        settingsService.Settings.DarkMode
+                            ? "Resources/DarkTheme.xaml"
+                            : "Resources/LightTheme.xaml",
+                        UriKind.Relative)
+                };
+
+            Resources.MergedDictionaries.Clear();
+            Resources.MergedDictionaries.Add(theme);
         }
 
         private async void PlaybackTimer_Tick(
@@ -733,8 +794,13 @@ namespace OakMusic
         private async Task PlayQueueSongAsync(
             int index)
         {
+            List<Song> queue =
+                PlayerView.IsShuffleEnabled
+                    ? shuffleQueue
+                    : playbackQueue;
+
             if (index < 0 ||
-                index >= playbackQueue.Count)
+                index >= queue.Count)
             {
                 return;
             }
@@ -743,7 +809,7 @@ namespace OakMusic
                 index;
 
             currentSong =
-                playbackQueue[index];
+                queue[index];
 
             Song song =
                 currentSong;
@@ -774,16 +840,10 @@ namespace OakMusic
 
         private async Task PlayNextSongAsync()
         {
-            if (playbackQueue.Count == 0)
-            {
-                return;
-            }
-
             int nextIndex =
-                currentQueueIndex + 1;
+                GetNextQueueIndex();
 
-            if (nextIndex >=
-                playbackQueue.Count)
+            if (nextIndex < 0)
             {
                 return;
             }
@@ -871,6 +931,104 @@ namespace OakMusic
                 System.Diagnostics.Debug.WriteLine(
                     $"Playback command error: {ex}");
             }
+        }
+
+        private async void ShuffleButton_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            if (playbackQueue.Count == 0)
+            {
+                return;
+            }
+
+            if (PlayerView.IsShuffleEnabled)
+            {
+                CreateShuffleQueue();
+
+                if (currentSong != null)
+                {
+                    int currentIndex =
+                        shuffleQueue.FindIndex(
+                            song =>
+                                song.VideoId ==
+                                currentSong.VideoId);
+
+                    if (currentIndex >= 0)
+                    {
+                        Song firstSong =
+                            shuffleQueue[0];
+
+                        shuffleQueue[0] =
+                            shuffleQueue[currentIndex];
+
+                        shuffleQueue[currentIndex] =
+                            firstSong;
+
+                        currentQueueIndex =
+                            0;
+                    }
+                }
+            }
+            else
+            {
+                shuffleQueue.Clear();
+
+                if (currentSong != null)
+                {
+                    int currentIndex =
+                        playbackQueue.FindIndex(
+                            song =>
+                                song.VideoId ==
+                                currentSong.VideoId);
+
+                    if (currentIndex >= 0)
+                    {
+                        currentQueueIndex =
+                            currentIndex;
+                    }
+                }
+            }
+        }
+
+        private async void RepeatButton_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            PlayerView.SetRepeat(
+                PlayerView.IsRepeatEnabled);
+        }
+        private int GetNextQueueIndex()
+        {
+            List<Song> queue =
+                PlayerView.IsShuffleEnabled
+                    ? shuffleQueue
+                    : playbackQueue;
+
+            if (queue.Count == 0)
+            {
+                return -1;
+            }
+
+            int nextIndex =
+                currentQueueIndex + 1;
+
+            if (nextIndex >= queue.Count)
+            {
+                if (PlayerView.IsRepeatEnabled)
+                {
+                    if (PlayerView.IsShuffleEnabled)
+                    {
+                        CreateShuffleQueue();
+                    }
+
+                    return 0;
+                }
+
+                return -1;
+            }
+
+            return nextIndex;
         }
 
         private async void PreviousButton_Click(
@@ -979,16 +1137,27 @@ namespace OakMusic
             string query =
                 SearchTextBox.Text.Trim();
 
-            if (string.IsNullOrWhiteSpace(
-                    query))
+            if (string.IsNullOrWhiteSpace(query))
             {
                 return;
             }
 
             try
             {
+                searchCancellation?.Cancel();
+                searchCancellation?.Dispose();
+
+                searchCancellation =
+                    new CancellationTokenSource();
+
+                CancellationToken token =
+                    searchCancellation.Token;
+
                 isSearching =
                     true;
+
+                isLoadingMoreSearchResults =
+                    false;
 
                 SearchPlaceholder.Visibility =
                     Visibility.Collapsed;
@@ -996,14 +1165,30 @@ namespace OakMusic
                 ShowView(
                     AppView.Search);
 
-                searchResults =
-                    await musicService.SearchAsync(
-                        query);
+                searchResults.Clear();
 
-                SearchView.SetResults(
-                    searchResults,
+                SearchView.ClearResults();
+
+                List<Song> results =
+                    await musicService.SearchAsync(
+                        query,
+                        token);
+
+                if (token.IsCancellationRequested)
+                {
+                    return;
+                }
+
+                searchResults.AddRange(
+                    results);
+
+                SearchView.AddResults(
+                    results,
                     ResultButton_Click,
                     AddSongButton_Click);
+            }
+            catch (OperationCanceledException)
+            {
             }
             catch (Exception ex)
             {
@@ -1013,6 +1198,64 @@ namespace OakMusic
             finally
             {
                 isSearching =
+                    false;
+            }
+        }
+
+        private async Task LoadMoreSearchResultsAsync()
+        {
+            if (isLoadingMoreSearchResults ||
+                !musicService.HasMoreResults)
+            {
+                return;
+            }
+
+            if (searchCancellation == null)
+            {
+                return;
+            }
+
+            try
+            {
+                isLoadingMoreSearchResults =
+                    true;
+
+                CancellationToken token =
+                    searchCancellation.Token;
+
+                List<Song> results =
+                    await musicService.LoadNextPageAsync(
+                        token);
+
+                if (token.IsCancellationRequested)
+                {
+                    return;
+                }
+
+                if (results.Count == 0)
+                {
+                    return;
+                }
+
+                searchResults.AddRange(
+                    results);
+
+                SearchView.AddResults(
+                    results,
+                    ResultButton_Click,
+                    AddSongButton_Click);
+            }
+            catch (OperationCanceledException)
+            {
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(
+                    $"Load more search results error: {ex}");
+            }
+            finally
+            {
+                isLoadingMoreSearchResults =
                     false;
             }
         }
@@ -1099,11 +1342,20 @@ namespace OakMusic
             PlaylistView.SetPlaylists(
                 playlists);
 
+            SearchView.LoadMoreRequested +=
+                SearchView_LoadMoreRequested;
+
             if (currentPlaylist == playlist)
             {
                 PlaylistView.ShowPlaylist(
                     playlist);
             }
+        }
+        private async void SearchView_LoadMoreRequested(
+            object? sender,
+            EventArgs e)
+        {
+            await LoadMoreSearchResultsAsync();
         }
 
         private void CreatePlaylistAndAddSong(
@@ -1305,9 +1557,36 @@ namespace OakMusic
                 playlists);
         }
 
+        private void CreateShuffleQueue()
+        {
+            shuffleQueue =
+                new List<Song>(
+                    playbackQueue);
+
+            for (int i =
+                    shuffleQueue.Count - 1;
+                 i > 0;
+                 i--)
+            {
+                int j =
+                    random.Next(
+                        i + 1);
+
+                Song temp =
+                    shuffleQueue[i];
+
+                shuffleQueue[i] =
+                    shuffleQueue[j];
+
+                shuffleQueue[j] =
+                    temp;
+            }
+        }
         private void ShowView(
             AppView view)
         {
+            currentView = view;
+
             PlayerView.Visibility =
                 view == AppView.Player
                     ? Visibility.Visible
@@ -1322,17 +1601,36 @@ namespace OakMusic
                 view == AppView.Playlists
                     ? Visibility.Visible
                     : Visibility.Collapsed;
+
+            SettingsView.Visibility =
+                view == AppView.Settings
+                ? Visibility.Visible
+                : Visibility.Collapsed;
+        }
+        private void SettingsButton_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            if (currentView == AppView.Settings)
+                ShowView(AppView.Player);
+            else
+                ShowView(AppView.Settings);
         }
 
         private void PlaylistButton_Click(
             object sender,
             RoutedEventArgs e)
         {
-            PlaylistView.SetPlaylists(
+
+            if (currentView == AppView.Playlists)
+                ShowView(AppView.Player);
+            else
+            {
+                PlaylistView.SetPlaylists(
                 playlists);
 
-            ShowView(
-                AppView.Playlists);
+                ShowView(AppView.Playlists);
+            }
         }
 
         private void PlayerButton_Click(
@@ -1362,11 +1660,45 @@ namespace OakMusic
                 WindowState.Minimized;
         }
 
+        private void ResetWindowButton_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            WindowState =
+                WindowState.Normal;
+
+            Width =
+                380;
+
+            Height =
+                560;
+
+            Left =
+                (SystemParameters.WorkArea.Width - Width) / 2;
+
+            Top =
+                (SystemParameters.WorkArea.Height - Height) / 2;
+        }
+
         private void CloseButton_Click(
             object sender,
             RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void SettingsView_SettingsChanged(
+            object? sender,
+            EventArgs e)
+        {
+            ApplyTheme();
+
+            PlayerView.UpdateRepeatButton();
+            PlayerView.UpdateShuffleButton();
+            PlayerView.UpdatePlayButton(isPlaying);
+
+            Topmost =
+                settingsService.Settings.AlwaysOnTop;
         }
     }
 }

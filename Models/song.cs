@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OakMusic.Models
+﻿namespace OakMusic.Models
 {
     public class Song
     {

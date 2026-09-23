@@ -14,13 +14,13 @@
 
             <TextBlock x:Name="PlaylistTitleText"
                        Text="PLAYLISTS"
-                       Foreground="#F0F0F0"
+                       Foreground="{DynamicResource PrimaryTextBrush}"
                        FontSize="18"
                        FontWeight="SemiBold"/>
 
             <TextBlock x:Name="PlaylistSongCountText"
                        Text=""
-                       Foreground="#707070"
+                       Foreground="{DynamicResource SecondaryTextBrush}"
                        FontSize="12"
                        Margin="0,26,0,0"/>
 
@@ -31,21 +31,21 @@
                     Margin="0,14,0,10">
 
             <Button x:Name="PlayAllButton"
-                    Content="▶  Play All"
+                    Content="Create Playlist"
                     Width="100"
                     Height="36"
-                    Background="#202020"
-                    Foreground="White"
+                    Background="{DynamicResource ControlBoarderBrush}"
+                    Foreground="{DynamicResource PrimaryTextBrush}"
                     BorderThickness="0"
-                    Click="PlayAllButton_Click"/>
+                    Click="CreatePlaylistButton_Click"/>
 
             <Button x:Name="BackButton"
                     Content="←  Back"
                     Width="80"
                     Height="36"
                     Margin="8,0,0,0"
-                    Background="Transparent"
-                    Foreground="#AAAAAA"
+                    Background="{DynamicResource ControlBoarderBrush}"
+                    Foreground="{DynamicResource PrimaryTextBrush}"
                     BorderThickness="0"
                     Click="BackButton_Click"/>
 
@@ -53,6 +53,8 @@
 
         <ScrollViewer Grid.Row="2"
                       VerticalScrollBarVisibility="Auto"
+                      Background="{DynamicResource ControlBoarderBrush}"
+                      Foreground="{DynamicResource PrimaryTextBrush}"
                       HorizontalScrollBarVisibility="Disabled">
 
             <StackPanel x:Name="PlaylistSongsPanel"/>

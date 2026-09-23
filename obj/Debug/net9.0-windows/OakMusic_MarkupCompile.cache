@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\Owner\source\repos\OakMusic\App.xaml
-6291904101
+10-26762449
 32080080057
-142100294372
+171920034994
 203321219069
-AddToPlaylistWindow.xaml;MainWindow.xaml;PlaylistNameWindow.xaml;Views\PlayerView.xaml;Views\PlaylistView.xaml;Views\SearchView.xaml;
+AddToPlaylistWindow.xaml;MainWindow.xaml;PlaylistNameWindow.xaml;Resources\DarkTheme.xaml;Resources\LightTheme.xaml;Resources\ThemeResources.xaml;Views\PlayerView.xaml;Views\PlaylistView.xaml;Views\SearchView.xaml;Views\SettingsView.xaml;
 
 False
 

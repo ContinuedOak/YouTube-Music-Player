@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace OakMusic.Models
+﻿namespace OakMusic.Models
 {
     public class Playlist
     {

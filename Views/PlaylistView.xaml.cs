@@ -142,18 +142,10 @@ namespace OakMusic.Views
                         HorizontalAlignment.Stretch,
 
                     Background =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                32,
-                                32,
-                                32)),
+                        (Brush)FindResource("ControlBoarderBrush"),
 
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                235,
-                                235,
-                                235)),
+                        (Brush)FindResource("PrimaryTextBrush"),
 
                     BorderThickness =
                         new Thickness(0),
@@ -204,11 +196,7 @@ namespace OakMusic.Views
                         new CornerRadius(6),
 
                     Background =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                45,
-                                45,
-                                45)),
+                        (Brush)FindResource("AlbumBackgroundBrush"),
 
                     ClipToBounds =
                         true,
@@ -280,11 +268,7 @@ namespace OakMusic.Views
                         playlist.Name,
 
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                235,
-                                235,
-                                235)),
+                        (Brush)FindResource("PrimaryTextBrush"),
 
                     FontSize =
                         14,
@@ -323,18 +307,10 @@ namespace OakMusic.Views
                         52,
 
                     Background =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                32,
-                                32,
-                                32)),
+                        (Brush)FindResource("ControlBoarderBrush"),
 
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                175,
-                                175,
-                                175)),
+                        (Brush)FindResource("PrimaryTextBrush"),
 
                     BorderThickness =
                         new Thickness(0),
@@ -369,18 +345,10 @@ namespace OakMusic.Views
                         52,
 
                     Background =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                32,
-                                32,
-                                32)),
+                        (Brush)FindResource("ControlBoarderBrush"),
 
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                160,
-                                160,
-                                160)),
+                        (Brush)FindResource("PrimaryTextBrush"),
 
                     BorderThickness =
                         new Thickness(0),
@@ -420,11 +388,7 @@ namespace OakMusic.Views
                     "♫",
 
                 Foreground =
-                    new SolidColorBrush(
-                        Color.FromRgb(
-                            150,
-                            150,
-                            150)),
+                    (Brush)FindResource("AlbumBackgroundBrush"),
 
                 FontSize =
                     18,
@@ -477,18 +441,10 @@ namespace OakMusic.Views
                         HorizontalAlignment.Stretch,
 
                     Background =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                32,
-                                32,
-                                32)),
+                        (Brush)FindResource("AlbumBackgroundBrush"),
 
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                235,
-                                235,
-                                235)),
+                        (Brush)FindResource("PrimaryTextBrush"),
 
                     BorderThickness =
                         new Thickness(0),
@@ -533,11 +489,7 @@ namespace OakMusic.Views
                         song.Title,
 
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                235,
-                                235,
-                                235)),
+                        (Brush)FindResource("PrimaryTextBrush"),
 
                     FontSize =
                         13,
@@ -563,11 +515,7 @@ namespace OakMusic.Views
                         song.DurationText,
 
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                130,
-                                130,
-                                130)),
+                        (Brush)FindResource("PrimaryTextBrush"),
 
                     FontSize =
                         12,
@@ -606,18 +554,10 @@ namespace OakMusic.Views
                         48,
 
                     Background =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                32,
-                                32,
-                                32)),
+                        (Brush)FindResource("AlbumBackgroundBrush"),
 
                     Foreground =
-                        new SolidColorBrush(
-                            Color.FromRgb(
-                                160,
-                                160,
-                                160)),
+                        (Brush)FindResource("PrimaryTextBrush"),
 
                     BorderThickness =
                         new Thickness(0),

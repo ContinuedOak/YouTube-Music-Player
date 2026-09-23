@@ -1,9 +1,12 @@
-﻿using System;
+﻿using OakMusic.Models;
+using OakMusic.Services;
+using System;
 using System.Net.Http;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using OakMusic.Models;
 
 namespace OakMusic.Views
 {
@@ -13,16 +16,39 @@ namespace OakMusic.Views
         public event RoutedEventHandler? PreviousClicked;
         public event RoutedEventHandler? NextClicked;
 
+        public event RoutedEventHandler? ShuffleClicked;
+        public event RoutedEventHandler? RepeatClicked;
+
         public event RoutedPropertyChangedEventHandler<double>? VolumeChanged;
         public event RoutedPropertyChangedEventHandler<double>? ProgressChanged;
+
+        public bool IsShuffleEnabled { get; private set; }
+
+        public bool IsRepeatEnabled { get; private set; }
 
         private static readonly HttpClient HttpClient = new();
 
         private bool suppressProgressEvent;
 
+        private SettingsService? settingsService;
+
+        private bool isLoading;
+
         public PlayerView()
         {
             InitializeComponent();
+        }
+
+        public void Initialize(SettingsService service)
+        {
+            settingsService = service;
+
+            isLoading = true;
+
+            VolumeSlider.Value =
+                settingsService.Settings.Volume;
+
+            isLoading = false;
         }
 
         public void SetSong(Song song)
@@ -37,7 +63,7 @@ namespace OakMusic.Views
 
             ChannelText.Text =
                 string.IsNullOrWhiteSpace(artist)
-                    ? "YouTube Music"
+                    ? "Arist Not Found"
                     : artist;
 
             suppressProgressEvent = true;
@@ -100,13 +126,32 @@ namespace OakMusic.Views
                 FormatTime(time);
         }
 
-        public void SetPlaying(
-            bool playing)
+        public void SetPlaying(bool playing)
         {
             PlayButton.Content =
                 playing
                     ? "❚❚"
                     : "▶";
+
+            UpdatePlayButton(playing);
+        }
+
+        public void SetShuffle(
+            bool enabled)
+        {
+            IsShuffleEnabled =
+                enabled;
+
+            UpdateShuffleButton();
+        }
+
+        public void SetRepeat(
+            bool enabled)
+        {
+            IsRepeatEnabled =
+                enabled;
+
+            UpdateRepeatButton();
         }
 
         private async void LoadAlbumCover(
@@ -175,6 +220,82 @@ namespace OakMusic.Views
                 e);
         }
 
+        private void Shuffle_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            IsShuffleEnabled =
+                !IsShuffleEnabled;
+
+            UpdateShuffleButton();
+
+            ShuffleClicked?.Invoke(
+                sender,
+                e);
+        }
+
+        private void Repeat_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            IsRepeatEnabled =
+                !IsRepeatEnabled;
+
+            UpdateRepeatButton();
+
+            RepeatClicked?.Invoke(
+                sender,
+                e);
+        }
+
+        public void UpdatePlayButton(bool playing)
+        {
+            PlayButton.Foreground =
+                playing
+                    ? (Brush)FindResource("ControlForegroundBrush")
+                    : (Brush)FindResource("MutedTextBrush");
+
+            PlayButton.Background =
+                playing
+                    ? (Brush)FindResource("AlbumBackgroundBrush")
+                    : (Brush)FindResource("SurfaceBrush");
+        }
+        public void UpdateShuffleButton()
+        {
+            if (ShuffleToggleButton == null)
+            {
+                return;
+            }
+
+            ShuffleToggleButton.Foreground =
+                IsShuffleEnabled
+                    ? (Brush)FindResource("ControlForegroundBrush")
+                    : (Brush)FindResource("MutedTextBrush");
+
+            ShuffleToggleButton.Background =
+                IsShuffleEnabled
+                    ? (Brush)FindResource("ControlFillBrush")
+                    : (Brush)FindResource("SurfaceBrush");
+        }
+
+        public void UpdateRepeatButton()
+        {
+            if (RepeatToggleButton == null)
+            {
+                return;
+            }
+
+            RepeatToggleButton.Foreground =
+                IsRepeatEnabled
+                    ? (Brush)FindResource("ControlForegroundBrush")
+                    : (Brush)FindResource("MutedTextBrush");
+
+            RepeatToggleButton.Background =
+                IsRepeatEnabled
+                    ? (Brush)FindResource("ControlFillBrush")
+                    : (Brush)FindResource("SurfaceBrush");
+        }
+
         private void PreviousButton_Click(
             object sender,
             RoutedEventArgs e)
@@ -198,16 +319,39 @@ namespace OakMusic.Views
             RoutedPropertyChangedEventArgs<double> e)
         {
             if (VolumeIcon == null)
+            {
                 return;
+            }
 
             if (e.NewValue <= 0)
-                VolumeIcon.Text = "🔇";
+            {
+                VolumeIcon.Text =
+                    "🔇";
+            }
             else if (e.NewValue <= 33)
-                 VolumeIcon.Text = "🔈";
+            {
+                VolumeIcon.Text =
+                    "🔈";
+            }
             else if (e.NewValue <= 66)
-                VolumeIcon.Text = "🔉";
+            {
+                VolumeIcon.Text =
+                    "🔉";
+            }
             else
-                VolumeIcon.Text = "🔊";
+            {
+                VolumeIcon.Text =
+                    "🔊";
+            }
+
+            if (!isLoading &&
+                settingsService != null)
+            {
+                settingsService.Settings.Volume =
+                    e.NewValue;
+
+                settingsService.Save();
+            }
 
             VolumeChanged?.Invoke(
                 this,

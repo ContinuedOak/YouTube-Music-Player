@@ -11,12 +11,13 @@
 
         <TextBlock Grid.Row="0"
                    Text="SEARCH RESULTS"
-                   Foreground="#707070"
+                   Foreground="{DynamicResource LabelTextBrush}"
                    FontSize="11"
                    FontWeight="SemiBold"
                    Margin="2,0,0,10"/>
 
-        <ScrollViewer Grid.Row="1"
+        <ScrollViewer x:Name="ResultsScrollViewer"
+                      Grid.Row="1"
                       VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
 

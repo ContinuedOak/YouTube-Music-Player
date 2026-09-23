@@ -1,0 +1,23 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#F5F5F5"/>
+    <SolidColorBrush x:Key="AppBackgroundBrush" Color="#EAEAEA"/>
+    <SolidColorBrush x:Key="SurfaceBrush" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="AlbumBackgroundBrush" Color="#DBDBDB"/>
+
+    <SolidColorBrush x:Key="PrimaryTextBrush" Color="#202020"/>
+    <SolidColorBrush x:Key="SecondaryTextBrush" Color="#404040"/>
+    <SolidColorBrush x:Key="MutedTextBrush" Color="#707070"/>
+    <SolidColorBrush x:Key="LabelTextBrush" Color="#707070"/>
+
+    <SolidColorBrush x:Key="SearchBackgroundBrush" Color="#202020"/>
+    <SolidColorBrush x:Key="SearchTextBrush" Color="#AFAFAF"/>
+    
+    <SolidColorBrush x:Key="ControlFillBrush" Color="#E8E8E8"/>
+    <SolidColorBrush x:Key="ControlBoarderBrush" Color="#D3D3D3"/>
+    <SolidColorBrush x:Key="ControlForegroundBrush" Color="#202020"/>
+
+    <SolidColorBrush x:Key="VolumeThumbBrush" Color="#202020"/>
+</ResourceDictionary>

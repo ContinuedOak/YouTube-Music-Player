@@ -15,10 +15,8 @@
         AllowsTransparency="True"
         Background="Transparent">
 
-    <Border Background="#151515"
-            CornerRadius="16"
-            BorderBrush="#282828"
-            BorderThickness="1">
+    <Border Background="{DynamicResource AppBackgroundBrush}"
+            CornerRadius="13">
 
         <Grid>
 
@@ -32,13 +30,13 @@
             <!-- TITLE BAR -->
 
             <Grid Grid.Row="0"
-                  Background="#181818"
+                  Background="Transparent"
                   MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="48"/>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="38"/>
+                    <ColumnDefinition Width="250"/>
                     <ColumnDefinition Width="38"/>
                 </Grid.ColumnDefinitions>
 
@@ -48,41 +46,62 @@
                         Height="32"
                         Margin="8,0,0,0"
                         Background="Transparent"
-                        Foreground="#B8B8B8"
+                        Foreground="{DynamicResource PrimaryTextBrush}"
                         BorderThickness="0"
                         FontSize="16"
                         Click="PlaylistButton_Click"/>
 
                 <Button Grid.Column="1"
+                        Content="⚙"
+                        Width="32"
+                        Height="32"
+                        Background="Transparent"
+                        Foreground="{DynamicResource PrimaryTextBrush}"
+                        BorderThickness="0"
+                        FontSize="16"
+                        Click="SettingsButton_Click"/>
+
+                <Button Grid.Column="2"
                         Content="YouTube Music"
                         Width="120"
                         Height="32"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
-                        Margin="4,0,0,0"
                         Background="Transparent"
-                        Foreground="#EAEAEA"
+                        Foreground="{DynamicResource PrimaryTextBrush}"
                         BorderThickness="0"
                         FontSize="15"
                         FontWeight="SemiBold"
                         Click="PlayerButton_Click"/>
 
-                <Button Grid.Column="2"
+                <Button Grid.Column="3"
                         Content="—"
                         Width="32"
                         Height="32"
+                        Margin="-110,0,0,0"
                         Background="Transparent"
-                        Foreground="#888888"
+                        Foreground="{DynamicResource PrimaryTextBrush}"
                         BorderThickness="0"
                         FontSize="15"
                         Click="MinimizeButton_Click"/>
 
-                <Button Grid.Column="3"
+                <Button Grid.Column="4"
+                        Content="▢"
+                        Width="32"
+                        Height="32"
+                        Margin="-50,0,0,0"
+                        Background="Transparent"
+                        Foreground="{DynamicResource PrimaryTextBrush}"
+                        BorderThickness="0"
+                        FontSize="15"
+                        Click="ResetWindowButton_Click"/>
+
+                <Button Grid.Column="5"
                         Content="×"
                         Width="32"
                         Height="32"
                         Background="Transparent"
-                        Foreground="#888888"
+                        Foreground="{DynamicResource PrimaryTextBrush}"
                         BorderThickness="0"
                         FontSize="18"
                         Click="CloseButton_Click"/>
@@ -104,6 +123,9 @@
                 <views:PlaylistView x:Name="PlaylistView"
                                     Visibility="Collapsed"/>
 
+                <views:SettingsView x:Name="SettingsView"
+                                    Visibility="Collapsed"/>
+
             </Grid>
 
 
@@ -112,9 +134,9 @@
             <Grid Grid.Row="2"
                   Margin="20,8,20,10">
 
-                <Border Background="#202020"
+                <Border Background="{DynamicResource ControlFillBrush}"
                         CornerRadius="12"
-                        BorderBrush="#2C2C2C"
+                        BorderBrush="{DynamicResource ControlBoarderBrush}"
                         BorderThickness="1">
 
                     <Grid>
@@ -123,8 +145,8 @@
                                  Margin="14,0,42,0"
                                  Background="Transparent"
                                  BorderThickness="0"
-                                 Foreground="#E8E8E8"
-                                 CaretBrush="#E8E8E8"
+                                 Foreground="{DynamicResource PrimaryTextBrush}"
+                                 CaretBrush="{DynamicResource SearchBackgroundBrush}"
                                  FontSize="14"
                                  VerticalContentAlignment="Center"
                                  TextChanged="SearchTextBox_TextChanged"
@@ -132,7 +154,7 @@
 
                         <TextBlock Text="Search"
                                    Margin="14,0,0,0"
-                                   Foreground="#666666"
+                                   Foreground="{DynamicResource SearchTextBrush}"
                                    FontSize="14"
                                    VerticalAlignment="Center"
                                    IsHitTestVisible="False"
@@ -144,7 +166,7 @@
                                 Height="38"
                                 HorizontalAlignment="Right"
                                 Background="Transparent"
-                                Foreground="#8A8A8A"
+                                Foreground="{DynamicResource SearchTextBrush}"
                                 BorderThickness="0"
                                 FontSize="19"
                                 Click="SearchButton_Click"/>
