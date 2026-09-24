@@ -14,7 +14,6 @@ This project is and always will be open-source.
 <img width="170" height="250" alt="YouTube Music 24_09_2026 2_43_50 PM" src="https://github.com/user-attachments/assets/ca353870-0b94-498b-8d30-1bbfa3e57172" />
 <img width="170" height="250" alt="YouTube Music 24_09_2026 2_44_29 PM" src="https://github.com/user-attachments/assets/20f7bbb3-393b-4ab3-aa9b-d6e494dd7437" />
 <img width="170" height="250" alt="YouTube Music 24_09_2026 2_43_42 PM" src="https://github.com/user-attachments/assets/9246a9db-8c5e-436b-abed-ec92dceb8c27" />
-<img width="170" height="125" alt="Screenshot 24_09_2026 2_43_59 PM" src="https://github.com/user-attachments/assets/d6d06373-2728-41f6-9469-9eb4c3ced581" />
 <img width="170" height="250" alt="Screenshot 24_09_2026 2_44_17 PM" src="https://github.com/user-attachments/assets/4344c034-3ea0-44c5-9853-d8bc3509e5aa" />
 
 
