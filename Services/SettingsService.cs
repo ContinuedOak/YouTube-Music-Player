@@ -18,7 +18,7 @@ namespace OakMusic.Services
                 Path.Combine(
                     Environment.GetFolderPath(
                         Environment.SpecialFolder.ApplicationData),
-                    "OaksMusic");
+                    "OakMusic");
 
             settingsFile =
                 Path.Combine(

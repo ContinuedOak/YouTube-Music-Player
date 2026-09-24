@@ -6,7 +6,7 @@
         xmlns:wvc="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         xmlns:views="clr-namespace:OakMusic.Views"
         mc:Ignorable="d"
-        Title="OakMusic"
+        Title="YouTube Music"
         Width="380"
         Height="560"
         MinWidth="340"
@@ -14,6 +14,59 @@
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent">
+
+    <Window.Resources>
+
+        <Style TargetType="Button">
+
+            <Setter Property="Template">
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="ButtonBorder"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="4">
+
+                            <ContentPresenter
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                            Margin="{TemplateBinding Padding}"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                 Value="True">
+
+                                <Setter TargetName="ButtonBorder"
+                                    Property="Background"
+                                    Value="{DynamicResource ButtonHoverBrush}"/>
+
+                            </Trigger>
+
+                            <Trigger Property="IsPressed"
+                                 Value="True">
+
+                                <Setter TargetName="ButtonBorder"
+                                    Property="Background"
+                                    Value="{DynamicResource ButtonHoverBrush}"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+
+    </Window.Resources>
 
     <Border Background="{DynamicResource AppBackgroundBrush}"
             CornerRadius="13">
@@ -26,6 +79,7 @@
                 <RowDefinition Height="60"/>
                 <RowDefinition Height="1"/>
             </Grid.RowDefinitions>
+
 
             <!-- TITLE BAR -->
 
@@ -40,6 +94,7 @@
                     <ColumnDefinition Width="38"/>
                 </Grid.ColumnDefinitions>
 
+
                 <Button Grid.Column="0"
                         Content="☰"
                         Width="32"
@@ -51,6 +106,7 @@
                         FontSize="16"
                         Click="PlaylistButton_Click"/>
 
+
                 <Button Grid.Column="1"
                         Content="⚙"
                         Width="32"
@@ -60,6 +116,7 @@
                         BorderThickness="0"
                         FontSize="16"
                         Click="SettingsButton_Click"/>
+
 
                 <Button Grid.Column="2"
                         Content="YouTube Music"
@@ -74,6 +131,7 @@
                         FontWeight="SemiBold"
                         Click="PlayerButton_Click"/>
 
+
                 <Button Grid.Column="3"
                         Content="—"
                         Width="32"
@@ -83,10 +141,12 @@
                         Foreground="{DynamicResource PrimaryTextBrush}"
                         BorderThickness="0"
                         FontSize="15"
+                        FontWeight="Bold"
                         Click="MinimizeButton_Click"/>
 
+
                 <Button Grid.Column="4"
-                        Content="▢"
+                        Content="⭕"
                         Width="32"
                         Height="32"
                         Margin="-50,0,0,0"
@@ -94,16 +154,18 @@
                         Foreground="{DynamicResource PrimaryTextBrush}"
                         BorderThickness="0"
                         FontSize="15"
+                        FontWeight="Bold"
                         Click="ResetWindowButton_Click"/>
 
+
                 <Button Grid.Column="5"
-                        Content="×"
+                        Content="❌"
                         Width="32"
                         Height="32"
                         Background="Transparent"
                         Foreground="{DynamicResource PrimaryTextBrush}"
                         BorderThickness="0"
-                        FontSize="18"
+                        FontSize="10"
                         Click="CloseButton_Click"/>
 
             </Grid>
@@ -152,6 +214,7 @@
                                  TextChanged="SearchTextBox_TextChanged"
                                  KeyDown="SearchTextBox_KeyDown"/>
 
+
                         <TextBlock Text="Search"
                                    Margin="14,0,0,0"
                                    Foreground="{DynamicResource SearchTextBrush}"
@@ -160,6 +223,7 @@
                                    IsHitTestVisible="False"
                                    Visibility="Visible"
                                    x:Name="SearchPlaceholder"/>
+
 
                         <Button Content="⌕"
                                 Width="38"
@@ -176,13 +240,6 @@
                 </Border>
 
             </Grid>
-
-
-            <!-- BOTTOM BORDER -->
-
-            <Border Grid.Row="3"
-                    Background="#292929"/>
-
 
             <!-- HIDDEN YOUTUBE PLAYER -->
 

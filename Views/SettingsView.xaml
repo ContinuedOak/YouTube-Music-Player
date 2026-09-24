@@ -1,6 +1,7 @@
 ﻿<UserControl x:Class="OakMusic.Views.SettingsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OakMusic">
 
     <Grid Margin="24,8,24,0">
 
@@ -15,6 +16,21 @@
                    FontSize="11"
                    FontWeight="SemiBold"
                    Margin="2,0,0,10"/>
+
+        <TextBlock x:Name="UserTime"
+                   Grid.Row="0"
+                   Text="Listen Timer: 0h 0m"
+                   Foreground="{DynamicResource LabelTextBrush}"
+                   FontSize="10"
+                   FontWeight="SemiBold"
+                   Margin="1,15,0,10"/>
+
+        <TextBlock Grid.Row="0"
+                   Text="{Binding Source={x:Static local:AppInfo.Version}, StringFormat=v{0}}"
+                   Foreground="{DynamicResource LabelTextBrush}"
+                   FontSize="11"
+                   FontWeight="SemiBold"
+                   Margin="2,30,0,10"/>
 
         <ScrollViewer Grid.Row="1"
                       VerticalScrollBarVisibility="Auto"
@@ -47,7 +63,7 @@
                                        FontSize="13"
                                        FontWeight="SemiBold"/>
 
-                            <TextBlock Text="Use the dark OakMusic interface"
+                            <TextBlock Text="Use the dark YouTube Music interface"
                                        Foreground="{DynamicResource LabelTextBrush}"
                                        FontSize="11"
                                        Margin="0,3,0,0"/>
@@ -90,7 +106,7 @@
                                        FontSize="13"
                                        FontWeight="SemiBold"/>
 
-                            <TextBlock Text="Keep OakMusic above other windows"
+                            <TextBlock Text="Keep YouTube Music above other windows"
                                        Foreground="{DynamicResource LabelTextBrush}"
                                        FontSize="11"
                                        Margin="0,3,0,0"/>
@@ -105,6 +121,7 @@
                                   Unchecked="SettingChanged"/>
 
                     </Grid>
+
 
                 </Border>
 

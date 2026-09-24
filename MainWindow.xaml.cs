@@ -28,6 +28,8 @@ namespace OakMusic
 
         private readonly YouTubeMusicService musicService;
 
+        private int playtimeSaveCounter;
+
         private List<Song> searchResults =
             new();
 
@@ -119,6 +121,9 @@ namespace OakMusic
             PlaylistView.PlaylistClicked +=
                 Playlist_Click;
 
+            PlaylistView.PlaylistReordered +=
+                PlaylistView_PlaylistReordered;
+
             PlaylistView.EditPlaylistClicked +=
                 EditPlaylist_Click;
 
@@ -149,14 +154,10 @@ namespace OakMusic
             SettingsView.SettingsChanged +=
                 SettingsView_SettingsChanged;
 
-            settingsService = new SettingsService();
-
             ApplyTheme();
 
-            SettingsView.Initialize(settingsService);
-
-            SettingsView.SettingsChanged +=
-                SettingsView_SettingsChanged;
+            Topmost =
+                settingsService.Settings.AlwaysOnTop;
 
             Topmost =
                 settingsService.Settings.AlwaysOnTop;
@@ -190,6 +191,20 @@ namespace OakMusic
                 isSeeking)
             {
                 return;
+            }
+
+            settingsService.Settings.Playtime += 0.25;
+
+            SettingsView.UpdatePlaytime(
+                settingsService.Settings.Playtime);
+
+            playtimeSaveCounter++;
+
+            if (playtimeSaveCounter >= 40)
+            {
+                playtimeSaveCounter = 0;
+
+                settingsService.Save();
             }
 
             try
@@ -231,6 +246,8 @@ namespace OakMusic
             playbackQueue =
                 new List<Song>(
                     currentPlaylist.Songs);
+
+            ShowView(AppView.Player);
 
             int queueIndex =
                 playbackQueue.FindIndex(
@@ -526,8 +543,10 @@ namespace OakMusic
                             return;
                         }
 
-                        playerReady =
-                            true;
+                        playerReady = true;
+
+                        ExecutePlayerCommandAsync($"setVolume({settingsService.Settings.Volume});");
+
 
                         System.Diagnostics.Debug.WriteLine(
                             "YouTube player ready.");
@@ -600,8 +619,7 @@ namespace OakMusic
                 {
                     if (message == "ready")
                     {
-                        playerReady =
-                            true;
+                        playerReady = true;
 
                         System.Diagnostics.Debug.WriteLine(
                             "YouTube player ready.");
@@ -813,9 +831,6 @@ namespace OakMusic
 
             Song song =
                 currentSong;
-
-            ShowView(
-                AppView.Player);
 
             PlayerView.SetSong(
                 song);
@@ -1699,6 +1714,14 @@ namespace OakMusic
 
             Topmost =
                 settingsService.Settings.AlwaysOnTop;
+        }
+
+        private void PlaylistView_PlaylistReordered(
+            object? sender,
+            Playlist playlist)
+        {
+            playlistService.SavePlaylist(
+                playlist);
         }
     }
 }

@@ -7,7 +7,7 @@
 
         <StackPanel>
 
-            <TextBlock Text="{Binding Source={x:Static local:AppInfo.Version}, StringFormat=v{0}}"
+            <TextBlock Text="Created by ContinuedOak"
                        Foreground="{DynamicResource LabelTextBrush}"
                        FontSize="11"
                        FontWeight="SemiBold"

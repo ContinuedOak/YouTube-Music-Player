@@ -20,4 +20,5 @@
     <SolidColorBrush x:Key="ControlForegroundBrush" Color="#202020"/>
 
     <SolidColorBrush x:Key="VolumeThumbBrush" Color="#202020"/>
+    <SolidColorBrush x:Key="ButtonHoverBrush" Color="#303030"/>
 </ResourceDictionary>

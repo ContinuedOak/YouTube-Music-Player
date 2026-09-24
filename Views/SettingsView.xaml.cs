@@ -18,12 +18,9 @@ namespace OakMusic.Views
             InitializeComponent();
         }
 
-        public void Initialize(
-            SettingsService service)
+        public void Initialize(SettingsService service)
         {
-            settingsService =
-                service;
-
+            settingsService = service;
             isLoading = true;
 
             AppSettings settings =
@@ -35,7 +32,22 @@ namespace OakMusic.Views
             AlwaysOnTopCheckBox.IsChecked =
                 settings.AlwaysOnTop;
 
+            UpdatePlaytime(
+                settings.Playtime);
+
             isLoading = false;
+        }
+
+        public void UpdatePlaytime(
+            double seconds)
+        {
+            TimeSpan time =
+                TimeSpan.FromSeconds(seconds);
+
+            UserTime.Text =
+                time.TotalHours >= 1
+                    ? $"Listen Timer: {(int)time.TotalHours}h {time.Minutes}m"
+                    : $"Listen Timer: {time.Minutes}m {time.Seconds}s";
         }
 
         private void SettingChanged(
