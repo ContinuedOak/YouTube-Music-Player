@@ -1,11 +1,7 @@
 ﻿using OakMusic.Models;
-using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace OakMusic.Services
 {
@@ -954,8 +950,10 @@ namespace OakMusic.Services
         private string FindThumbnailUrl(
             JsonElement element)
         {
-            string bestUrl =
-                "";
+            string bestUrl = "";
+            int bestWidth = 0;
+            int bestHeight = 0;
+            long bestArea = 0;
 
             if (element.ValueKind ==
                 JsonValueKind.Object)
@@ -969,20 +967,60 @@ namespace OakMusic.Services
                     foreach (JsonElement thumbnail in
                              thumbnails.EnumerateArray())
                     {
-                        if (thumbnail.TryGetProperty(
+                        if (!thumbnail.TryGetProperty(
                             "url",
                             out JsonElement url))
                         {
-                            string value =
-                                GetTextValue(
-                                    url);
+                            continue;
+                        }
 
-                            if (!string.IsNullOrEmpty(
-                                    value))
-                            {
-                                bestUrl =
-                                    value;
-                            }
+                        string value =
+                            GetTextValue(url);
+
+                        if (string.IsNullOrWhiteSpace(value))
+                        {
+                            continue;
+                        }
+
+                        int width = 0;
+                        int height = 0;
+
+                        if (thumbnail.TryGetProperty(
+                            "width",
+                            out JsonElement widthElement) &&
+                            widthElement.TryGetInt32(
+                                out int parsedWidth))
+                        {
+                            width = parsedWidth;
+                        }
+
+                        if (thumbnail.TryGetProperty(
+                            "height",
+                            out JsonElement heightElement) &&
+                            heightElement.TryGetInt32(
+                                out int parsedHeight))
+                        {
+                            height = parsedHeight;
+                        }
+
+                        long area =
+                            (long)width * height;
+
+                        if (area > bestArea ||
+                            (area == bestArea &&
+                             width > bestWidth))
+                        {
+                            bestUrl =
+                                value;
+
+                            bestWidth =
+                                width;
+
+                            bestHeight =
+                                height;
+
+                            bestArea =
+                                area;
                         }
                     }
                 }
@@ -1000,11 +1038,9 @@ namespace OakMusic.Services
                         FindThumbnailUrl(
                             property.Value);
 
-                    if (!string.IsNullOrEmpty(
-                            result))
+                    if (!string.IsNullOrEmpty(result))
                     {
-                        bestUrl =
-                            result;
+                        return result;
                     }
                 }
             }
@@ -1015,14 +1051,11 @@ namespace OakMusic.Services
                          element.EnumerateArray())
                 {
                     string result =
-                        FindThumbnailUrl(
-                            child);
+                        FindThumbnailUrl(child);
 
-                    if (!string.IsNullOrEmpty(
-                            result))
+                    if (!string.IsNullOrEmpty(result))
                     {
-                        bestUrl =
-                            result;
+                        return result;
                     }
                 }
             }

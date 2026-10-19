@@ -68,7 +68,7 @@ namespace OakMusic.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/OakMusic;V0.1.2.0;component/views/searchview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/OakMusic;V0.1.3.0;component/views/searchview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\SearchView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

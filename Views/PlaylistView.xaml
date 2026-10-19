@@ -33,6 +33,7 @@
 
             <Button x:Name="PlayAllButton"
                     Content="Create Playlist"
+                    Cursor="Hand"
                     Width="100"
                     Height="36"
                     Background="{DynamicResource ControlBoarderBrush}"
@@ -42,6 +43,7 @@
 
             <Button x:Name="BackButton"
                     Content="←  Back"
+                    Cursor="Hand"
                     Width="80"
                     Height="36"
                     Margin="8,0,0,0"
@@ -50,6 +52,17 @@
                     BorderThickness="0"
                     Visibility="Collapsed"
                     Click="BackButton_Click"/>
+
+            <Button x:Name="RefreshButton"
+                    Content="↻"
+                    Width="36"
+                    Height="36"
+                    Margin="6,0,0,0"
+                    ToolTip="Refresh Playlist Folder"
+                    Visibility="Collapsed"
+                    Background="{DynamicResource ControlBoarderBrush}"
+                    Foreground="{DynamicResource PrimaryTextBrush}"
+                    Click="RefreshPlaylistsButton_Click" />
 
         </StackPanel>
 

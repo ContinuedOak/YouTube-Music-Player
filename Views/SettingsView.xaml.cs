@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using OakMusic.Models;
@@ -12,6 +13,9 @@ namespace OakMusic.Views
         private bool isLoading;
 
         public event EventHandler? SettingsChanged;
+
+        public bool ShowPlaylistReloadButton =>
+            ShowPlaylistReloadButtonCheckBox.IsChecked == true;
 
         public SettingsView()
         {
@@ -31,6 +35,9 @@ namespace OakMusic.Views
 
             AlwaysOnTopCheckBox.IsChecked =
                 settings.AlwaysOnTop;
+
+            ShowPlaylistReloadButtonCheckBox.IsChecked =
+                settings.ShowPlaylistReloadButton;
 
             UpdatePlaytime(
                 settings.Playtime);
@@ -65,6 +72,9 @@ namespace OakMusic.Views
 
             settingsService.Settings.AlwaysOnTop =
                 AlwaysOnTopCheckBox.IsChecked == true;
+
+            settingsService.Settings.ShowPlaylistReloadButton =
+                ShowPlaylistReloadButtonCheckBox.IsChecked == true;
 
             settingsService.Save();
 

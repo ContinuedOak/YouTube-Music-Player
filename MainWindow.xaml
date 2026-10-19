@@ -9,8 +9,8 @@
         Title="YouTube Music"
         Width="380"
         Height="560"
-        MinWidth="340"
-        MinHeight="500"
+        MinWidth="380"
+        MinHeight="560"
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent">
@@ -25,15 +25,16 @@
                     <ControlTemplate TargetType="Button">
 
                         <Border x:Name="ButtonBorder"
-                            Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}"
-                            CornerRadius="4">
+                                Cursor="Hand"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
 
                             <ContentPresenter
-                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                            Margin="{TemplateBinding Padding}"/>
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Margin="{TemplateBinding Padding}"/>
 
                         </Border>
 
@@ -97,6 +98,7 @@
 
                 <Button Grid.Column="0"
                         Content="☰"
+                        Cursor="Hand"
                         Width="32"
                         Height="32"
                         Margin="8,0,0,0"
@@ -109,6 +111,7 @@
 
                 <Button Grid.Column="1"
                         Content="⚙"
+                        Cursor="Hand"
                         Width="32"
                         Height="32"
                         Background="Transparent"
@@ -120,6 +123,7 @@
 
                 <Button Grid.Column="2"
                         Content="YouTube Music"
+                        Cursor="Hand"
                         Width="120"
                         Height="32"
                         HorizontalAlignment="Left"
@@ -134,6 +138,7 @@
 
                 <Button Grid.Column="3"
                         Content="—"
+                        Cursor="Hand"
                         Width="32"
                         Height="32"
                         Margin="-110,0,0,0"
@@ -146,6 +151,7 @@
 
 
                 <Button Grid.Column="4"
+                        Cursor="Hand"
                         Content="⭕"
                         Width="32"
                         Height="32"
@@ -159,6 +165,7 @@
 
 
                 <Button Grid.Column="5"
+                        Cursor="Hand"
                         Content="❌"
                         Width="32"
                         Height="32"

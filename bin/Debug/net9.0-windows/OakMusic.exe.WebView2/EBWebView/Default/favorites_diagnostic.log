@@ -1176,3 +1176,440 @@
 2026-09-24 20:36:20.588: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-09-24 20:36:20.588: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-09-24 20:41:27.121: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-24 20:54:27.668: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-24 20:54:27.668: [INFO] Profiles total count: 1
+2026-09-24 20:54:27.669: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-24 20:54:27.669: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-24 20:54:27.669: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-24 20:54:27.669: [INFO] OnDoneLoading sync enabled: 0
+2026-09-24 20:54:27.669: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-24 20:54:27.669: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-24 20:54:27.669: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-24 21:09:04.397: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-24 21:09:04.397: [INFO] Profiles total count: 1
+2026-09-24 21:09:04.397: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-24 21:09:04.397: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-24 21:09:04.397: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-24 21:09:04.397: [INFO] OnDoneLoading sync enabled: 0
+2026-09-24 21:09:04.397: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-24 21:09:04.397: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-24 21:09:04.397: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-25 09:18:48.223: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-26 04:42:34.020: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-26 04:42:34.020: [INFO] Profiles total count: 1
+2026-09-26 04:42:34.020: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-26 04:42:34.020: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-26 04:42:34.020: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-26 04:42:34.020: [INFO] OnDoneLoading sync enabled: 0
+2026-09-26 04:42:34.020: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-26 04:42:34.020: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-26 04:42:34.020: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-26 06:53:35.919: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-26 08:10:10.503: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-26 08:10:10.503: [INFO] Profiles total count: 1
+2026-09-26 08:10:10.503: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-26 08:10:10.503: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-26 08:10:10.503: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-26 08:10:10.503: [INFO] OnDoneLoading sync enabled: 0
+2026-09-26 08:10:10.503: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-26 08:10:10.503: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-26 08:10:10.503: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-26 14:21:21.039: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-26 15:03:46.052: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-26 15:03:46.052: [INFO] Profiles total count: 1
+2026-09-26 15:03:46.052: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-26 15:03:46.052: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-26 15:03:46.052: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-26 15:03:46.052: [INFO] OnDoneLoading sync enabled: 0
+2026-09-26 15:03:46.052: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-26 15:03:46.052: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-26 15:03:46.052: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-26 17:46:10.740: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-27 03:32:13.603: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-27 03:32:13.603: [INFO] Profiles total count: 1
+2026-09-27 03:32:13.603: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-27 03:32:13.603: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-27 03:32:13.603: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-27 03:32:13.603: [INFO] OnDoneLoading sync enabled: 0
+2026-09-27 03:32:13.603: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-27 03:32:13.603: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-27 03:32:13.603: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-27 09:30:12.315: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-27 10:12:38.586: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-27 10:12:38.586: [INFO] Profiles total count: 1
+2026-09-27 10:12:38.586: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-27 10:12:38.586: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-27 10:12:38.586: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-27 10:12:38.586: [INFO] OnDoneLoading sync enabled: 0
+2026-09-27 10:12:38.586: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-27 10:12:38.586: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-27 10:12:38.586: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-27 11:09:08.484: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-27 11:44:11.492: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-27 11:44:11.492: [INFO] Profiles total count: 1
+2026-09-27 11:44:11.492: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-27 11:44:11.492: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-27 11:44:11.492: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-27 11:44:11.492: [INFO] OnDoneLoading sync enabled: 0
+2026-09-27 11:44:11.492: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-27 11:44:11.492: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-27 11:44:11.492: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-27 11:58:08.556: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 05:08:13.432: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-28 05:08:13.432: [INFO] Profiles total count: 1
+2026-09-28 05:08:13.432: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-28 05:08:13.432: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-28 05:08:13.432: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-28 05:08:13.432: [INFO] OnDoneLoading sync enabled: 0
+2026-09-28 05:08:13.432: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-28 05:08:13.432: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-28 05:08:13.432: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 11:00:04.519: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 11:58:58.917: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-28 11:58:58.917: [INFO] Profiles total count: 1
+2026-09-28 11:58:58.917: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-28 11:58:58.917: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-28 11:58:58.917: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-28 11:58:58.918: [INFO] OnDoneLoading sync enabled: 0
+2026-09-28 11:58:58.918: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-28 11:58:58.918: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-28 11:58:58.918: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-28 12:38:23.735: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-30 14:08:42.665: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-30 14:08:42.665: [INFO] Profiles total count: 1
+2026-09-30 14:08:42.665: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-30 14:08:42.665: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-09-30 14:08:42.665: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-09-30 14:08:42.665: [INFO] OnDoneLoading sync enabled: 0
+2026-09-30 14:08:42.665: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-30 14:08:42.665: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-30 14:08:42.665: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-03 03:54:28.097: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 10:28:53.032: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 10:28:53.032: [INFO] Profiles total count: 1
+2026-10-04 10:28:53.032: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 10:28:53.032: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 10:28:53.032: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 10:28:53.032: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 10:28:53.032: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 10:28:53.032: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 10:28:53.032: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 10:29:45.368: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 10:29:50.421: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 10:29:50.421: [INFO] Profiles total count: 1
+2026-10-04 10:29:50.421: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 10:29:50.421: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 10:29:50.421: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 10:29:50.421: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 10:29:50.421: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 10:29:50.421: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 10:29:50.421: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 10:39:15.608: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 10:39:23.798: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 10:39:23.798: [INFO] Profiles total count: 1
+2026-10-04 10:39:23.798: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 10:39:23.798: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 10:39:23.798: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 10:39:23.798: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 10:39:23.798: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 10:39:23.798: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 10:39:23.798: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:01:22.030: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:01:30.227: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:01:30.227: [INFO] Profiles total count: 1
+2026-10-04 11:01:30.227: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:01:30.228: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:01:30.228: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:01:30.228: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 11:01:30.228: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 11:01:30.228: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 11:01:30.228: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:03:02.410: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:03:06.746: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:03:06.746: [INFO] Profiles total count: 1
+2026-10-04 11:03:06.746: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:03:06.746: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:03:06.746: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:03:06.746: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 11:03:06.746: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 11:03:06.746: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 11:03:06.746: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:04:31.260: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:13:56.460: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:13:56.460: [INFO] Profiles total count: 1
+2026-10-04 11:13:56.460: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:13:56.460: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:13:56.460: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:13:56.460: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 11:13:56.460: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 11:13:56.460: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 11:13:56.460: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:14:17.256: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:21:11.437: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:21:11.437: [INFO] Profiles total count: 1
+2026-10-04 11:21:11.437: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:21:11.437: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:21:11.437: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:21:11.437: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 11:21:11.437: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 11:21:11.437: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 11:21:11.437: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:23:51.500: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:26:41.602: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:26:41.602: [INFO] Profiles total count: 1
+2026-10-04 11:26:41.602: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:26:41.602: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:26:41.602: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:26:41.602: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 11:26:41.602: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 11:26:41.602: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 11:26:41.602: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:29:47.672: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:29:51.702: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:29:51.702: [INFO] Profiles total count: 1
+2026-10-04 11:29:51.702: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:29:51.702: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:29:51.702: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:29:51.702: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 11:29:51.702: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 11:29:51.702: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 11:29:51.702: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:36:15.307: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:36:20.364: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:36:20.364: [INFO] Profiles total count: 1
+2026-10-04 11:36:20.364: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:36:20.364: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:36:20.364: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:36:20.364: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 11:36:20.364: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 11:36:20.364: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 11:36:20.364: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:36:48.009: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:40:06.826: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:40:06.826: [INFO] Profiles total count: 1
+2026-10-04 11:40:06.827: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:40:06.827: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-04 11:40:06.827: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-04 11:40:06.827: [INFO] OnDoneLoading sync enabled: 0
+2026-10-04 11:40:06.827: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-04 11:40:06.827: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-04 11:40:06.827: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-04 11:46:34.124: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-06 19:56:21.092: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-06 19:56:21.092: [INFO] Profiles total count: 1
+2026-10-06 19:56:21.093: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-06 19:56:21.093: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-06 19:56:21.093: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-06 19:56:21.093: [INFO] OnDoneLoading sync enabled: 0
+2026-10-06 19:56:21.093: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-06 19:56:21.093: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-06 19:56:21.093: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-07 18:06:16.850: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-07 18:06:16.850: [INFO] Profiles total count: 1
+2026-10-07 18:06:16.850: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-07 18:06:16.850: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-07 18:06:16.850: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-07 18:06:16.850: [INFO] OnDoneLoading sync enabled: 0
+2026-10-07 18:06:16.850: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-07 18:06:16.850: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-07 18:06:16.850: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-07 21:18:39.337: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-09 05:22:29.859: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-09 05:22:29.859: [INFO] Profiles total count: 1
+2026-10-09 05:22:29.859: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-09 05:22:29.859: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-09 05:22:29.859: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-09 05:22:29.859: [INFO] OnDoneLoading sync enabled: 0
+2026-10-09 05:22:29.859: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-09 05:22:29.859: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-09 05:22:29.859: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-09 06:12:10.013: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-10 21:33:42.126: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-10 21:33:42.126: [INFO] Profiles total count: 1
+2026-10-10 21:33:42.128: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-10 21:33:42.128: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-10 21:33:42.128: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-10 21:33:42.128: [INFO] OnDoneLoading sync enabled: 0
+2026-10-10 21:33:42.128: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-10 21:33:42.128: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-10 21:33:42.129: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-14 05:10:23.946: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-14 05:10:23.946: [INFO] Profiles total count: 1
+2026-10-14 05:10:23.950: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-14 05:10:23.950: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-14 05:10:23.950: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-14 05:10:23.950: [INFO] OnDoneLoading sync enabled: 0
+2026-10-14 05:10:23.950: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-14 05:10:23.950: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-14 05:10:23.950: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-14 05:10:35.830: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-15 09:13:27.102: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-15 09:13:27.102: [INFO] Profiles total count: 1
+2026-10-15 09:13:27.103: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-15 09:13:27.103: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-15 09:13:27.103: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-15 09:13:27.103: [INFO] OnDoneLoading sync enabled: 0
+2026-10-15 09:13:27.103: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-15 09:13:27.103: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-15 09:13:27.103: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-15 17:03:18.960: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-15 17:05:01.840: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-15 17:05:01.840: [INFO] Profiles total count: 1
+2026-10-15 17:05:01.840: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-15 17:05:01.840: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-15 17:05:01.840: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-15 17:05:01.840: [INFO] OnDoneLoading sync enabled: 0
+2026-10-15 17:05:01.840: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-15 17:05:01.840: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-15 17:05:01.840: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-16 08:46:29.371: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-16 22:46:51.481: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-16 22:46:51.481: [INFO] Profiles total count: 1
+2026-10-16 22:46:51.482: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-16 22:46:51.482: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-16 22:46:51.482: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-16 22:46:51.482: [INFO] OnDoneLoading sync enabled: 0
+2026-10-16 22:46:51.482: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-16 22:46:51.482: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-16 22:46:51.482: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-17 14:46:17.232: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 22:11:29.306: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 22:11:29.306: [INFO] Profiles total count: 1
+2026-10-18 22:11:29.306: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 22:11:29.306: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 22:11:29.306: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 22:11:29.306: [INFO] OnDoneLoading sync enabled: 0
+2026-10-18 22:11:29.306: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-18 22:11:29.306: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-18 22:11:29.306: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 22:16:32.187: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 22:19:50.242: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 22:19:50.242: [INFO] Profiles total count: 1
+2026-10-18 22:19:50.242: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 22:19:50.242: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 22:19:50.242: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 22:19:50.242: [INFO] OnDoneLoading sync enabled: 0
+2026-10-18 22:19:50.242: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-18 22:19:50.242: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-18 22:19:50.242: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 22:25:09.309: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 22:25:13.257: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 22:25:13.257: [INFO] Profiles total count: 1
+2026-10-18 22:25:13.257: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 22:25:13.257: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 22:25:13.257: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 22:25:13.257: [INFO] OnDoneLoading sync enabled: 0
+2026-10-18 22:25:13.257: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-18 22:25:13.257: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-18 22:25:13.257: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 22:26:12.615: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 22:27:25.148: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 22:27:25.148: [INFO] Profiles total count: 1
+2026-10-18 22:27:25.148: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 22:27:25.148: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 22:27:25.148: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 22:27:25.148: [INFO] OnDoneLoading sync enabled: 0
+2026-10-18 22:27:25.148: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-18 22:27:25.148: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-18 22:27:25.148: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 23:09:43.756: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 23:09:50.589: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 23:09:50.589: [INFO] Profiles total count: 1
+2026-10-18 23:09:50.589: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 23:09:50.589: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-18 23:09:50.589: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-18 23:09:50.589: [INFO] OnDoneLoading sync enabled: 0
+2026-10-18 23:09:50.589: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-18 23:09:50.589: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-18 23:09:50.589: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:05:37.545: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:06:51.618: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:06:51.618: [INFO] Profiles total count: 1
+2026-10-19 00:06:51.618: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:06:51.618: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:06:51.618: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:06:51.618: [INFO] OnDoneLoading sync enabled: 0
+2026-10-19 00:06:51.618: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-19 00:06:51.618: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-19 00:06:51.618: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:11:42.997: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:15:35.525: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:15:35.525: [INFO] Profiles total count: 1
+2026-10-19 00:15:35.525: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:15:35.525: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:15:35.525: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:15:35.525: [INFO] OnDoneLoading sync enabled: 0
+2026-10-19 00:15:35.525: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-19 00:15:35.525: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-19 00:15:35.525: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:16:22.947: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:16:26.960: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:16:26.960: [INFO] Profiles total count: 1
+2026-10-19 00:16:26.960: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:16:26.960: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:16:26.960: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:16:26.960: [INFO] OnDoneLoading sync enabled: 0
+2026-10-19 00:16:26.960: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-19 00:16:26.960: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-19 00:16:26.960: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:36:37.519: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:36:39.657: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:36:39.657: [INFO] Profiles total count: 1
+2026-10-19 00:36:39.657: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:36:39.657: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:36:39.657: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:36:39.657: [INFO] OnDoneLoading sync enabled: 0
+2026-10-19 00:36:39.657: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-19 00:36:39.657: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-19 00:36:39.657: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:39:19.989: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:40:03.520: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:40:03.520: [INFO] Profiles total count: 1
+2026-10-19 00:40:03.520: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:40:03.520: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:40:03.520: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:40:03.520: [INFO] OnDoneLoading sync enabled: 0
+2026-10-19 00:40:03.520: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-19 00:40:03.520: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-19 00:40:03.520: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:41:13.831: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 00:41:54.232: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:41:54.232: [INFO] Profiles total count: 1
+2026-10-19 00:41:54.232: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:41:54.232: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 00:41:54.232: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 00:41:54.232: [INFO] OnDoneLoading sync enabled: 0
+2026-10-19 00:41:54.232: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-19 00:41:54.232: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-19 00:41:54.232: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 01:21:26.153: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 01:51:12.079: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 01:51:12.079: [INFO] Profiles total count: 1
+2026-10-19 01:51:12.079: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 01:51:12.079: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 01:51:12.079: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 01:51:12.079: [INFO] OnDoneLoading sync enabled: 0
+2026-10-19 01:51:12.079: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-19 01:51:12.079: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-19 01:51:12.079: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 01:55:46.946: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 02:00:53.204: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 02:00:53.204: [INFO] Profiles total count: 1
+2026-10-19 02:00:53.204: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 02:00:53.204: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 02:00:53.204: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 02:00:53.204: [INFO] OnDoneLoading sync enabled: 0
+2026-10-19 02:00:53.204: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-19 02:00:53.204: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-19 02:00:53.204: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 02:01:24.099: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 02:01:28.541: [INFO] CurrentProfilePath: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 02:01:28.541: [INFO] Profiles total count: 1
+2026-10-19 02:01:28.541: [INFO] Profile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 02:01:28.541: [INFO] LastUsedProfileDir: C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default
+2026-10-19 02:01:28.541: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Owner\source\repos\OakMusic\bin\Debug\net9.0-windows\OakMusic.exe.WebView2\EBWebView\Default lastActive=2026-09-22T22:12:31.114Z
+2026-10-19 02:01:28.541: [INFO] OnDoneLoading sync enabled: 0
+2026-10-19 02:01:28.541: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-19 02:01:28.541: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-19 02:01:28.541: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-19 02:03:32.970: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

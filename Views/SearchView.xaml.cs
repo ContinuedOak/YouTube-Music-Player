@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
+﻿using System.Net.Http;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using OakMusic.Models;
@@ -44,7 +43,7 @@ namespace OakMusic.Views
 
                 SearchResultsPanel.Children.Add(row);
 
-                LoadThumbnailAsync(
+                _ = LoadThumbnailAsync(
                     song.ThumbnailUrl,
                     row);
             }
@@ -310,7 +309,7 @@ namespace OakMusic.Views
             return row;
         }
 
-        private async void LoadThumbnailAsync(
+        private async Task LoadThumbnailAsync(
             string url,
             Grid row)
         {

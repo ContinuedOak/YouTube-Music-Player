@@ -1,10 +1,8 @@
 ﻿using Microsoft.Web.WebView2.Core;
 using OakMusic.Models;
 using OakMusic.Services;
-using System;
-using System.Collections.Generic;
+using OakMusic.Views;
 using System.Text.Json;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -80,6 +78,8 @@ namespace OakMusic
                             250)
                 };
 
+            Loaded += MainWindow_Loaded;
+
             playbackTimer.Tick +=
                 PlaybackTimer_Tick;
 
@@ -154,6 +154,12 @@ namespace OakMusic
             SettingsView.SettingsChanged +=
                 SettingsView_SettingsChanged;
 
+            PlaylistView.RefreshPlaylistsClicked +=
+                PlaylistView_RefreshPlaylistsClicked;
+
+            PlaylistView.SetRefreshButtonVisible(
+                SettingsView.ShowPlaylistReloadButton);
+
             ApplyTheme();
 
             Topmost =
@@ -163,6 +169,23 @@ namespace OakMusic
                 settingsService.Settings.AlwaysOnTop;
 
             InitializePlayerAsync();
+        }
+
+        private void PlaylistView_RefreshPlaylistsClicked(
+            object? sender,
+            EventArgs e)
+        {
+            List<Playlist> playlists =
+                playlistService.LoadPlaylists();
+
+            PlaylistView.SetPlaylists(playlists);
+        }
+        private async void MainWindow_Loaded(
+            object sender,
+            RoutedEventArgs e)
+        {
+            var updateService = new UpdateService();
+            await updateService.CheckForUpdatesAsync();
         }
 
         private void ApplyTheme()
@@ -1184,6 +1207,9 @@ namespace OakMusic
 
                 SearchView.ClearResults();
 
+                Mouse.OverrideCursor =
+                    Cursors.Wait;
+
                 List<Song> results =
                     await musicService.SearchAsync(
                         query,
@@ -1214,6 +1240,9 @@ namespace OakMusic
             {
                 isSearching =
                     false;
+
+                Mouse.OverrideCursor =
+                    Cursors.Arrow;
             }
         }
 

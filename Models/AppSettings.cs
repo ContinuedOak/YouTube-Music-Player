@@ -9,5 +9,7 @@
         public double Volume { get; set; } = 100;
 
         public double Playtime { get; set; } = 0;
+
+        public bool ShowPlaylistReloadButton { get; set; } = false;
     }
 }

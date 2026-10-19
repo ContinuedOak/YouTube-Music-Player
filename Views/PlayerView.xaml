@@ -150,8 +150,9 @@
 
                 <Button x:Name="ShuffleToggleButton"
                         Content="🔀"
+                        Cursor="Hand"
                         Background="{DynamicResource ControlFillBrush}"
-                        Foreground="{DynamicResource ControlForegroundBrush}"
+                        Foreground="{DynamicResource MutedTextBrush}"
                         Margin="8,0"
                         FontSize="15"
                         Width="36"
@@ -232,6 +233,7 @@
                 </Button>
 
                 <Button Content="⏮"
+                        Cursor="Hand"
                         Background="{DynamicResource AlbumBackgroundBrush}"
                         Foreground="{DynamicResource ControlForegroundBrush}"
                         Margin="0,0"
@@ -315,7 +317,8 @@
                 </Button>
 
                 <Button x:Name="PlayButton"
-                        Content="▶"       
+                        Content="▶"
+                        Cursor="Hand"
                         FontSize="25"        
                         Width="58"       
                         Height="58"       
@@ -398,6 +401,7 @@
                 </Button>
 
                 <Button Content="⏭"
+                        Cursor="Hand"
                         FontSize="20"
                         Width="48"
                         Height="48"
@@ -480,8 +484,9 @@
 
                 <Button x:Name="RepeatToggleButton"
                         Content="🔁"
-                        Background="{DynamicResource MutedTextBrush}"
-                        Foreground="{DynamicResource ControlForegroundBrush}"
+                        Cursor="Hand"
+                        Background="{DynamicResource ControlFillBrush}"
+                        Foreground="{DynamicResource MutedTextBrush}"
                         Margin="8,0"
                         FontSize="15"
                         Width="36"
@@ -568,19 +573,20 @@
             Margin="0,6,0,0">
 
                 <TextBlock x:Name="VolumeIcon"
-               Text="🔊"
-               Foreground="{DynamicResource PrimaryTextBrush}"
-               FontSize="14"
-               VerticalAlignment="Center"
-               Margin="0,0,8,0"/>
+                           Text="🔊"
+                           Foreground="{DynamicResource PrimaryTextBrush}"
+                           FontSize="14"
+                           VerticalAlignment="Center"
+                           Margin="0,0,8,0"/>
 
                 <Slider x:Name="VolumeSlider"
-            Width="110"
-            Minimum="0"
-            Maximum="100"
-            Value="100"
-            Height="22"
-            ValueChanged="VolumeSlider_ValueChanged">
+                        Width="110"
+                        Cursor="Hand"
+                        Minimum="0"
+                        Maximum="100"
+                        Value="100"
+                        Height="22"
+                        ValueChanged="VolumeSlider_ValueChanged">
 
                     <Slider.Template>
                         <ControlTemplate TargetType="Slider">

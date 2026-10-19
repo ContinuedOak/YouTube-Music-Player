@@ -1,118 +1,563 @@
-{"logTime": "0922/131213", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/131459", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/131656", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/131731", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/132551", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/132733", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/133222", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/134533", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/135848", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/140048", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/142029", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/142304", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/144431", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/144447", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/144539", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/145142", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/145414", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/145554", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/145827", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/150049", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/150919", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/151707", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/152047", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/153846", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/154610", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/154818", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/155751", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/160439", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/160737", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/165725", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/170330", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/170556", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/170739", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/171054", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/172634", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/172835", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/174022", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/175200", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/184448", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/204739", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/205640", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/210113", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/211458", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/212425", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/214212", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/221709", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/221810", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/222905", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/223452", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/223519", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/232728", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/232747", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/233349", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/233847", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0922/234111", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/163356", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/171420", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/174514", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/174851", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/180004", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/180655", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/180814", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/181003", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/181152", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/181411", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/181756", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/182000", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/182457", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/182521", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/182628", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/182709", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/190526", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/190602", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/191329", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/192238", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/192432", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/193346", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/193357", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/193450", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/194600", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/195036", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/195101", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/195154", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/195339", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/195511", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/195602", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/195749", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/195845", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/195922", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/200004", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/200644", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/202827", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/202854", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/203420", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/203828", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/204232", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/205108", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/210100", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/210822", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/212945", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/212959", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0923/213855", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/005137", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/010458", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/010743", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/015146", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/015206", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/015222", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/015411", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/035821", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/040412", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/044239", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/045552", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/084112", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/085538", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/091004", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/203225", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
-{"logTime": "0924/203620", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/000448", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/000448", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436841888603067\", source=unknown"}
+{"logTime": "1019/000458", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/000458", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436841898608480\", source=unknown"}
+{"logTime": "1019/000508", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/000508", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436841908620420\", source=unknown"}
+{"logTime": "1019/000518", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/000518", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436841918622365\", source=unknown"}
+{"logTime": "1019/000528", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/000528", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436841928630417\", source=unknown"}
+{"logTime": "1019/000530", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/000537", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/000537", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/000537", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/000537", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=1, source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=profile.network_pbs, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=profile.password_hash_data_list, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436842011617753\", source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436842011618421\", source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=edge.services.signin_scoped_device_id, new_value=\"46d59d65-3270-40d0-8c8e-bc82532c811b\", source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=autofill.credit_card_enabled, new_value=false, source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=enable_edge_collections, new_value=false, source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=resolve_navigation_errors_use_web_service.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=alternate_error_pages.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.storage_access_header_origin_trial, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=in_product_help.session_last_active_time, new_value=\"13436842011644613\", source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=edge_rewards.coachmark_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/000651", "level": "INFO", "message": "Preference changed: name=edge_rewards.hva_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/000653", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/000653", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436842013790319\", source=unknown"}
+{"logTime": "1019/000653", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/000656", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/000656", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/000656", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/000701", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/000701", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/001142", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/001142", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/001142", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/001142", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=1, source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=profile.network_pbs, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=profile.password_hash_data_list, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436842535524615\", source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436842535525382\", source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=edge.services.signin_scoped_device_id, new_value=\"3568fd3b-ef77-4ac5-aba9-aeda97d4473e\", source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=autofill.credit_card_enabled, new_value=false, source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=enable_edge_collections, new_value=false, source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=resolve_navigation_errors_use_web_service.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=alternate_error_pages.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.storage_access_header_origin_trial, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=in_product_help.session_last_active_time, new_value=\"13436842535557566\", source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=edge_rewards.coachmark_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/001535", "level": "INFO", "message": "Preference changed: name=edge_rewards.hva_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/001537", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/001537", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436842537668334\", source=unknown"}
+{"logTime": "1019/001537", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/001540", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/001540", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/001540", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/001545", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/001545", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/001622", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/001622", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/001622", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/001622", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=1, source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=profile.network_pbs, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=profile.password_hash_data_list, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436842586959688\", source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436842586960308\", source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=edge.services.signin_scoped_device_id, new_value=\"c5a00faa-1d5c-4d33-8e55-0070d5ff4527\", source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=autofill.credit_card_enabled, new_value=false, source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=enable_edge_collections, new_value=false, source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=resolve_navigation_errors_use_web_service.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=alternate_error_pages.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.storage_access_header_origin_trial, new_value=[object], source=unknown"}
+{"logTime": "1019/001626", "level": "INFO", "message": "Preference changed: name=in_product_help.session_last_active_time, new_value=\"13436842586988704\", source=unknown"}
+{"logTime": "1019/001627", "level": "INFO", "message": "Preference changed: name=edge_rewards.coachmark_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/001627", "level": "INFO", "message": "Preference changed: name=edge_rewards.hva_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/001629", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/001629", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436842589088344\", source=unknown"}
+{"logTime": "1019/001629", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/001631", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/001631", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/001631", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/001636", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/001636", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/002341", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002341", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002344", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002346", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002351", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/002352", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002352", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843032392114\", source=unknown"}
+{"logTime": "1019/002402", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002402", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843042402215\", source=unknown"}
+{"logTime": "1019/002412", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002412", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843052417365\", source=unknown"}
+{"logTime": "1019/002422", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002422", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843062421055\", source=unknown"}
+{"logTime": "1019/002432", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002432", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843072435357\", source=unknown"}
+{"logTime": "1019/002442", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002442", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843082443367\", source=unknown"}
+{"logTime": "1019/002452", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002452", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843092447056\", source=unknown"}
+{"logTime": "1019/002502", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002502", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843102448728\", source=unknown"}
+{"logTime": "1019/002512", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002512", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843112458478\", source=unknown"}
+{"logTime": "1019/002522", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002522", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843122470116\", source=unknown"}
+{"logTime": "1019/002532", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002532", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843132479782\", source=unknown"}
+{"logTime": "1019/002542", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002542", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843142493493\", source=unknown"}
+{"logTime": "1019/002552", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002552", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843152497456\", source=unknown"}
+{"logTime": "1019/002602", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002602", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843162503449\", source=unknown"}
+{"logTime": "1019/002612", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002612", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843172508364\", source=unknown"}
+{"logTime": "1019/002622", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002632", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002632", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843192520566\", source=unknown"}
+{"logTime": "1019/002632", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/002642", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002642", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843202525205\", source=unknown"}
+{"logTime": "1019/002652", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002652", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843212537764\", source=unknown"}
+{"logTime": "1019/002702", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002702", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843222549641\", source=unknown"}
+{"logTime": "1019/002712", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002712", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843232558324\", source=unknown"}
+{"logTime": "1019/002722", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002722", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843242573577\", source=unknown"}
+{"logTime": "1019/002732", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002732", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843252582512\", source=unknown"}
+{"logTime": "1019/002742", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002742", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843262590679\", source=unknown"}
+{"logTime": "1019/002752", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002752", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843272594149\", source=unknown"}
+{"logTime": "1019/002802", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002802", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843282607385\", source=unknown"}
+{"logTime": "1019/002812", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002812", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843292613234\", source=unknown"}
+{"logTime": "1019/002822", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002822", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843302625324\", source=unknown"}
+{"logTime": "1019/002832", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002832", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843312635989\", source=unknown"}
+{"logTime": "1019/002842", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002842", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843322638253\", source=unknown"}
+{"logTime": "1019/002847", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002852", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002855", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002855", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002856", "level": "INFO", "message": "Preference changed: name=profile.observed_session_time, new_value=[object], source=unknown"}
+{"logTime": "1019/002856", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002857", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002857", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/002858", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002858", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002859", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002900", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002900", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/002902", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002902", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843342653502\", source=unknown"}
+{"logTime": "1019/002908", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/002912", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002912", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843352664385\", source=unknown"}
+{"logTime": "1019/002922", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002922", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843362669024\", source=unknown"}
+{"logTime": "1019/002932", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002932", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843372675704\", source=unknown"}
+{"logTime": "1019/002942", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002942", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843382687499\", source=unknown"}
+{"logTime": "1019/002952", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/002952", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843392699798\", source=unknown"}
+{"logTime": "1019/003002", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003002", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843402700562\", source=unknown"}
+{"logTime": "1019/003012", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003012", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843412706506\", source=unknown"}
+{"logTime": "1019/003022", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003022", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843422713875\", source=unknown"}
+{"logTime": "1019/003032", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003032", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843432721835\", source=unknown"}
+{"logTime": "1019/003042", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003042", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843442737111\", source=unknown"}
+{"logTime": "1019/003052", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003052", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843452747549\", source=unknown"}
+{"logTime": "1019/003102", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003102", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843462760991\", source=unknown"}
+{"logTime": "1019/003111", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/003112", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003112", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843472772924\", source=unknown"}
+{"logTime": "1019/003121", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/003122", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003122", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843482777552\", source=unknown"}
+{"logTime": "1019/003132", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003132", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843492781163\", source=unknown"}
+{"logTime": "1019/003142", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003142", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843502786626\", source=unknown"}
+{"logTime": "1019/003152", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003152", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843512793903\", source=unknown"}
+{"logTime": "1019/003202", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003202", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843522803916\", source=unknown"}
+{"logTime": "1019/003212", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003212", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843532816327\", source=unknown"}
+{"logTime": "1019/003222", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003222", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843542830654\", source=unknown"}
+{"logTime": "1019/003232", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003232", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843552845066\", source=unknown"}
+{"logTime": "1019/003242", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003242", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843562859816\", source=unknown"}
+{"logTime": "1019/003252", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003252", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843572861470\", source=unknown"}
+{"logTime": "1019/003302", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003302", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843582862474\", source=unknown"}
+{"logTime": "1019/003312", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003312", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843592869330\", source=unknown"}
+{"logTime": "1019/003322", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003322", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843602881272\", source=unknown"}
+{"logTime": "1019/003332", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003332", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843612892224\", source=unknown"}
+{"logTime": "1019/003352", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003352", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843632908782\", source=unknown"}
+{"logTime": "1019/003402", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003402", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843642924656\", source=unknown"}
+{"logTime": "1019/003412", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003412", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843652931954\", source=unknown"}
+{"logTime": "1019/003422", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003422", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843662941139\", source=unknown"}
+{"logTime": "1019/003432", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003432", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843672941923\", source=unknown"}
+{"logTime": "1019/003442", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003442", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843682946453\", source=unknown"}
+{"logTime": "1019/003452", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003452", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843692953535\", source=unknown"}
+{"logTime": "1019/003502", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003502", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843702959687\", source=unknown"}
+{"logTime": "1019/003512", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003512", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843712966241\", source=unknown"}
+{"logTime": "1019/003522", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003522", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843722970105\", source=unknown"}
+{"logTime": "1019/003532", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003532", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843732980016\", source=unknown"}
+{"logTime": "1019/003542", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003542", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843742993969\", source=unknown"}
+{"logTime": "1019/003553", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003553", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843753006080\", source=unknown"}
+{"logTime": "1019/003603", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003603", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843763007971\", source=unknown"}
+{"logTime": "1019/003613", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003613", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843773021284\", source=unknown"}
+{"logTime": "1019/003614", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/003623", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003623", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843783026178\", source=unknown"}
+{"logTime": "1019/003624", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/003633", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003633", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843793028790\", source=unknown"}
+{"logTime": "1019/003637", "level": "INFO", "message": "Preference changed: name=profile.observed_session_time, new_value=[object], source=unknown"}
+{"logTime": "1019/003637", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003637", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/003637", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/003637", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=1, source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=profile.network_pbs, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=profile.password_hash_data_list, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436843799656420\", source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436843799656945\", source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=edge.services.signin_scoped_device_id, new_value=\"143f9efb-ba21-4955-9549-3ec7167456f7\", source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=autofill.credit_card_enabled, new_value=false, source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=enable_edge_collections, new_value=false, source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=resolve_navigation_errors_use_web_service.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=alternate_error_pages.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.storage_access_header_origin_trial, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=in_product_help.session_last_active_time, new_value=\"13436843799681506\", source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=edge_rewards.coachmark_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/003639", "level": "INFO", "message": "Preference changed: name=edge_rewards.hva_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/003641", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003641", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843801745185\", source=unknown"}
+{"logTime": "1019/003641", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/003644", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/003644", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/003644", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/003649", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/003649", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/003906", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/003906", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/003907", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/003916", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/003916", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003916", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436843956798733\", source=unknown"}
+{"logTime": "1019/003919", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/003919", "level": "INFO", "message": "Preference changed: name=profile.observed_session_time, new_value=[object], source=unknown"}
+{"logTime": "1019/003919", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/003919", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/003919", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=1, source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=profile.network_pbs, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=profile.password_hash_data_list, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436844003519824\", source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436844003520518\", source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=edge.services.signin_scoped_device_id, new_value=\"b642dc5f-7b66-4eba-8dcc-98db5a983e54\", source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=autofill.credit_card_enabled, new_value=false, source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=enable_edge_collections, new_value=false, source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=resolve_navigation_errors_use_web_service.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=alternate_error_pages.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.storage_access_header_origin_trial, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=in_product_help.session_last_active_time, new_value=\"13436844003545766\", source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=edge_rewards.coachmark_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/004003", "level": "INFO", "message": "Preference changed: name=edge_rewards.hva_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/004005", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/004005", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436844005608871\", source=unknown"}
+{"logTime": "1019/004005", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004007", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004007", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004008", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004008", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004008", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004009", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004013", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/004013", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/004019", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/004019", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436844019093478\", source=unknown"}
+{"logTime": "1019/004029", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/004029", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436844029103203\", source=unknown"}
+{"logTime": "1019/004039", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/004039", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436844039111561\", source=unknown"}
+{"logTime": "1019/004049", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/004049", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436844049119522\", source=unknown"}
+{"logTime": "1019/004059", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/004059", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436844059123668\", source=unknown"}
+{"logTime": "1019/004109", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/004109", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436844069126597\", source=unknown"}
+{"logTime": "1019/004113", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/004113", "level": "INFO", "message": "Preference changed: name=profile.observed_session_time, new_value=[object], source=unknown"}
+{"logTime": "1019/004113", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/004113", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/004113", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=1, source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=profile.network_pbs, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=profile.password_hash_data_list, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436844114231446\", source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436844114232089\", source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=edge.services.signin_scoped_device_id, new_value=\"37f1bed8-e054-4b02-8035-7f72673a6a14\", source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=autofill.credit_card_enabled, new_value=false, source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=enable_edge_collections, new_value=false, source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=resolve_navigation_errors_use_web_service.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=alternate_error_pages.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.storage_access_header_origin_trial, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=in_product_help.session_last_active_time, new_value=\"13436844114259000\", source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=edge_rewards.coachmark_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/004154", "level": "INFO", "message": "Preference changed: name=edge_rewards.hva_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/004156", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/004156", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436844116408736\", source=unknown"}
+{"logTime": "1019/004156", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004158", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004158", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004158", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/004204", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/004204", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/012126", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/012126", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/012126", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/012126", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=1, source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=profile.network_pbs, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=profile.password_hash_data_list, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436848272078682\", source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436848272079211\", source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=edge.services.signin_scoped_device_id, new_value=\"4df73cd3-0ba8-48f6-ac65-9eecb287a515\", source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=autofill.credit_card_enabled, new_value=false, source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=enable_edge_collections, new_value=false, source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=resolve_navigation_errors_use_web_service.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=alternate_error_pages.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.storage_access_header_origin_trial, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=in_product_help.session_last_active_time, new_value=\"13436848272102671\", source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=edge_rewards.coachmark_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/015112", "level": "INFO", "message": "Preference changed: name=edge_rewards.hva_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/015114", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/015114", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436848274171897\", source=unknown"}
+{"logTime": "1019/015114", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/015116", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/015116", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/015116", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/015122", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/015122", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/015546", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/015546", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/015546", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/015546", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=1, source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=profile.network_pbs, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=profile.password_hash_data_list, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436848853203698\", source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436848853204339\", source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=edge.services.signin_scoped_device_id, new_value=\"8f0840b4-56bf-4dc1-aa4c-52b110c4c3dd\", source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=autofill.credit_card_enabled, new_value=false, source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=enable_edge_collections, new_value=false, source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=resolve_navigation_errors_use_web_service.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=alternate_error_pages.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.storage_access_header_origin_trial, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=in_product_help.session_last_active_time, new_value=\"13436848853228975\", source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=edge_rewards.coachmark_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/020053", "level": "INFO", "message": "Preference changed: name=edge_rewards.hva_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/020055", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/020055", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436848855298200\", source=unknown"}
+{"logTime": "1019/020055", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/020057", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/020057", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/020057", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/020103", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/020103", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/020124", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/020124", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/020124", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/020124", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "UserPrefStore loaded: error=NONE (0)"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=1, source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=profile.network_pbs, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=profile.password_hash_data_list, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436848888540183\", source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=schedule_to_flush_to_disk, new_value=\"13436848888540762\", source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=edge.services.signin_scoped_device_id, new_value=\"63bf5a50-345c-4e71-bcba-d4590892af42\", source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=extensions.chrome_url_overrides, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=autofill.credit_card_enabled, new_value=false, source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=enable_edge_collections, new_value=false, source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=resolve_navigation_errors_use_web_service.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=alternate_error_pages.enabled, new_value=false, source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=optimization_guide.previously_registered_optimization_types, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.storage_access_header_origin_trial, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=in_product_help.session_last_active_time, new_value=\"13436848888566670\", source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=edge_rewards.coachmark_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/020128", "level": "INFO", "message": "Preference changed: name=edge_rewards.hva_promotions, new_value=[object], source=unknown"}
+{"logTime": "1019/020130", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/020130", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436848890635179\", source=unknown"}
+{"logTime": "1019/020130", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/020133", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/020133", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/020133", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.trackers_data, new_value=[object], source=unknown"}
+{"logTime": "1019/020138", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/020138", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1019/020332", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1019/020332", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1019/020332", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
+{"logTime": "1019/020332", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}

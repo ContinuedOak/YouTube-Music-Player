@@ -13,11 +13,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("OakMusic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.2")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.3.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.3")]
 [assembly: System.Reflection.AssemblyProductAttribute("OakMusic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OakMusic")]
-[assembly: System.Reflection.AssemblyVersionAttribute("0.1.2.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.1.3.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 

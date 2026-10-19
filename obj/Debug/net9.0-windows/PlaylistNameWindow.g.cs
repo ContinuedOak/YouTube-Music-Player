@@ -92,7 +92,7 @@ namespace OakMusic {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/OakMusic;V0.1.2.0;component/playlistnamewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/OakMusic;V0.1.3.0;component/playlistnamewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PlaylistNameWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

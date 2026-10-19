@@ -31,6 +31,8 @@ namespace OakMusic.Views
 
         public event EventHandler<Playlist>? PlaylistReordered;
 
+        public event EventHandler? RefreshPlaylistsClicked;
+
         private List<Playlist> playlists =
             new();
 
@@ -50,6 +52,15 @@ namespace OakMusic.Views
             ShowPlaylistList();
         }
 
+        private void RefreshPlaylistsButton_Click(
+    object sender,
+    RoutedEventArgs e)
+        {
+            RefreshPlaylistsClicked?.Invoke(
+                this,
+                EventArgs.Empty);
+        }
+
         public void ShowPlaylist(
             Playlist playlist)
         {
@@ -61,6 +72,10 @@ namespace OakMusic.Views
 
             PlayAllButton.Visibility =
                 Visibility.Collapsed;
+
+            RefreshButton.Visibility =
+                Visibility.Collapsed;
+
 
             PlaylistTitleText.Text =
                 playlist.Name;
@@ -109,6 +124,9 @@ namespace OakMusic.Views
                 Visibility.Collapsed;
 
             PlayAllButton.Visibility =
+                Visibility.Visible;
+
+            RefreshButton.Visibility =
                 Visibility.Visible;
 
             PlaylistTitleText.Text =
@@ -943,6 +961,14 @@ namespace OakMusic.Views
             BackClicked?.Invoke(
                 this,
                 EventArgs.Empty);
+        }
+
+        public void SetRefreshButtonVisible(bool visible)
+        {
+            RefreshButton.Visibility =
+                visible
+                    ? Visibility.Visible
+                    : Visibility.Collapsed;
         }
 
         private void PlayAllButton_Click(

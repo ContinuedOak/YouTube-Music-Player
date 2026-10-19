@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Owner\\source\\repos\\OakMusic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\views\\playlistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:views\\playlistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\oakmusic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:oakmusic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\services\\playlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:services\\playlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\views\\playlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:views\\playlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\services\\updateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:services\\updateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\appinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:appinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\views\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:views\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\views\\playlistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:views\\playlistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\views\\playlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:views\\playlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|c:\\users\\owner\\source\\repos\\oakmusic\\views\\settingsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39BDA4-0ECC-48C7-BF19-AAEE05C21CFB}|OakMusic.csproj|solutionrelative:views\\settingsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,52 +50,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlaylistService.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Services\\PlaylistService.cs",
-              "RelativeDocumentMoniker": "Services\\PlaylistService.cs",
-              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Services\\PlaylistService.cs",
-              "RelativeToolTip": "Services\\PlaylistService.cs",
+              "DocumentIndex": 4,
+              "Title": "AppInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\AppInfo.cs",
+              "RelativeDocumentMoniker": "AppInfo.cs",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\AppInfo.cs",
+              "RelativeToolTip": "AppInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-24T20:31:45.139Z",
+              "WhenOpened": "2026-10-19T01:52:00.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlaylistView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\PlaylistView.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\PlaylistView.xaml.cs",
-              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\PlaylistView.xaml.cs",
-              "RelativeToolTip": "Views\\PlaylistView.xaml.cs",
-              "ViewState": "AgIAAEMCAAAAAAAAAAAewE4CAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-24T20:27:04.235Z",
+              "Title": "OakMusic",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\OakMusic.csproj",
+              "RelativeDocumentMoniker": "OakMusic.csproj",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\OakMusic.csproj",
+              "RelativeToolTip": "OakMusic.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-19T01:50:35.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PlaylistView.xaml",
-              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\PlaylistView.xaml",
-              "RelativeDocumentMoniker": "Views\\PlaylistView.xaml",
-              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\PlaylistView.xaml",
-              "RelativeToolTip": "Views\\PlaylistView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-24T20:27:01.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-24T04:17:03.342Z",
+              "Title": "UpdateService.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Services\\UpdateService.cs",
+              "RelativeDocumentMoniker": "Services\\UpdateService.cs",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Services\\UpdateService.cs",
+              "RelativeToolTip": "Services\\UpdateService.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAQwGoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T01:44:20.497Z",
               "EditorCaption": ""
             },
             {
@@ -94,9 +95,60 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAKkGAAAAAAAAAAD4v7sGAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-24T04:15:28.494Z",
+              "WhenOpened": "2026-10-19T01:27:09.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Models\\AppSettings.cs",
+              "RelativeDocumentMoniker": "Models\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Models\\AppSettings.cs",
+              "RelativeToolTip": "Models\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T01:24:38.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SettingsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\SettingsView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\SettingsView.xaml.cs",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\SettingsView.xaml.cs",
+              "RelativeToolTip": "Views\\SettingsView.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T01:23:52.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlaylistView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\PlaylistView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\PlaylistView.xaml.cs",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\PlaylistView.xaml.cs",
+              "RelativeToolTip": "Views\\PlaylistView.xaml.cs",
+              "ViewState": "AgIAALADAAAAAAAAAAAcwMsDAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T01:18:02.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlaylistView.xaml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\PlaylistView.xaml",
+              "RelativeDocumentMoniker": "Views\\PlaylistView.xaml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\PlaylistView.xaml",
+              "RelativeToolTip": "Views\\PlaylistView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-19T01:02:28.746Z",
               "EditorCaption": ""
             },
             {
@@ -108,7 +160,8 @@
               "ToolTip": "C:\\Users\\Owner\\source\\repos\\OakMusic\\Views\\SettingsView.xaml",
               "RelativeToolTip": "Views\\SettingsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-24T04:13:18.946Z"
+              "WhenOpened": "2026-10-19T00:41:41.371Z",
+              "EditorCaption": ""
             }
           ]
         }

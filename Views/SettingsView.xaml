@@ -72,6 +72,7 @@
 
                         <CheckBox x:Name="DarkModeCheckBox"
                                   Grid.Column="1"
+                                  Cursor="Hand"
                                   VerticalAlignment="Center"
                                   IsChecked="True"
                                   Checked="SettingChanged"
@@ -81,7 +82,7 @@
 
                 </Border>
 
-                <TextBlock Text="WINDOW"
+                <TextBlock Text="APP"
                            Foreground="{DynamicResource LabelTextBrush}"
                            FontSize="10"
                            FontWeight="SemiBold"
@@ -115,6 +116,7 @@
 
                         <CheckBox x:Name="AlwaysOnTopCheckBox"
                                   Grid.Column="1"
+                                  Cursor="Hand"
                                   VerticalAlignment="Center"
                                   IsChecked="False"
                                   Checked="SettingChanged"
@@ -122,6 +124,40 @@
 
                     </Grid>
 
+
+                </Border>
+
+                <Border Background="{DynamicResource AlbumBackgroundBrush}"
+                        CornerRadius="8"
+                        Margin="0,0,0,6"
+                        Padding="14,12">
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Show Playlist Reload Button"
+                                       Foreground="{DynamicResource PrimaryTextBrush}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+
+                            <TextBlock Text="Show or hide the playlist refresh button"
+                                       Foreground="{DynamicResource LabelTextBrush}"
+                                       FontSize="11"
+                                       Margin="0,3,0,0"/>
+                        </StackPanel>
+
+                        <CheckBox x:Name="ShowPlaylistReloadButtonCheckBox"
+                                  Grid.Column="1"
+                                  Cursor="Hand"
+                                  VerticalAlignment="Center"
+                                  IsChecked="False"
+                                  Checked="SettingChanged"
+                                  Unchecked="SettingChanged"/>
+                    </Grid>
 
                 </Border>
 
